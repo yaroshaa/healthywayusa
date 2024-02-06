@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-bg {
+    background: url("../img/header.png") no-repeat;
+}
+.app-top-bg {
+    background: url("../img/header_2.png") no-repeat;
+}
+.certificate-bg {
+    background: url("../img/certificated.png") no-repeat;
+}
+.footer-bg {
+    background: url("../img/footer.png") no-repeat;
+}
+
+.hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+
+
+    transition: 0.5s;
+}
+
+.hexagon:before,
+.hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+}
+.hexagon:before {
+    transform: rotateZ(60deg);
+}
+.hexagon:after {
+    transform: rotateZ(-60deg);
+}
+
