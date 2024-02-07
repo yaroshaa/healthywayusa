@@ -8,19 +8,19 @@
 .app-top-bg {
     background: url("../img/header_2.png") no-repeat;
 }
-.certificate-bg {
-    background: url("../img/certificated.png") no-repeat;
-}
+
 .footer-bg {
     background: url("../img/footer.png") no-repeat;
 }
 
+.hexagon-wrapper{
+    width: 48px;
+    height: 48px;
+}
 .hexagon {
     position: relative;
-    width: 46%;
+    width: 50%;
     height: 80%;
-
-
     transition: 0.5s;
 }
 
@@ -41,4 +41,16 @@
 .hexagon:after {
     transform: rotateZ(-60deg);
 }
+
+.line-before-hexagon-small {
+    position: relative;
+}
+
+.line-before-hexagon {
+    position: relative;
+    -webkit-transform: skew(29deg);
+    -moz-transform: skew(29deg);
+    -o-transform: skew(29deg);
+}
+
 

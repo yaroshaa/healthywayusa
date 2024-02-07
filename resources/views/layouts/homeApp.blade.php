@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Purovite') }}</title>
+    <title>{{ config('app.name', 'Healthyway Production Inc.') }}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -14,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans antialiased ">
-<div id="app" class="home-bg xl:bg-contain lg:bg-contain md:bg-100% sm:bg-100% lt:bg-150%">
+<div id="app" class="bg-home bg-no-repeat xl:bg-contain lg:bg-contain md:bg-100% sm:bg-100% lt:bg-150%">
     @yield('wrapper')
     @if(Auth::user() && Auth::user()->hasRole('admin'))
         <a class='inline-block  align-center py-2 px-2  fixed bottom-6 right-4' href="{{ route('settings') }}">

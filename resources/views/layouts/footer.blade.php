@@ -2,7 +2,9 @@
     <div class="max-w-7xl mx-auto pt-10">
         <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col-reverse lt:flex-col-reverse">
             <div class="xl:w-2/5  lg:w-2/5 md:w-2/5 sm:w-full lt:w-full p-2 lg:pl-10">
-                <h2 class="uppercase lt:text-2xl md:text-6xl lg:text-6xl 2xl:text-8xl my-8 lg:text-left lt:text-center">{{ __('Contacts') }}</h2>
+                <a class="text-left inline-block mb-5" href="{{ route('home') }}">
+                    <x-application-logo class="block h-16 w-auto fill-current text-gray-600"/>
+                </a>
                 <div class="flex flex-row lt:justify-center lg:justify-start">
                     <span class="inline-block">
                         <x-link href="/">

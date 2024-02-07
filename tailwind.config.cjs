@@ -18,6 +18,12 @@ module.exports = {
                 'auto': 'auto',
                 'cover': 'cover',
                 'contain': 'contain',
+                '30%': '30%',
+                '40%': '40%',
+                '45%': '45%',
+                '50%': '50%',
+                '60%': '60%',
+                '70%': '70%',
                 '100%': '100%',
                 '120%': '120%',
                 '150%': '150%',
@@ -42,16 +48,42 @@ module.exports = {
 
                 '2xl': '1536px',
                 // => @media (min-width: 1536px) { ... }
-            }
+            },
+            backgroundImage: {
+                'molecule-left': "url('../img/molecule-left.png')",
+                'molecule-right': "url('../img/molecule-right.png')",
+                // 'molecule-right': "url('../img/molecule-1.svg')",
+                'manufacturing': "url('../img/manufacturing.png')",
+                'home': "url('../img/header.png')",
+                'app-top': "url('../img/header_2.png')",
+            },
+            colors: {
+                transparent: 'transparent',
+                current: 'currentColor',
+                'white': '#ffffff',
+                'light-green': '#b0d391',
+                'dark-green': '#225209',
+
+
+
+            },
 
         },
-        colors: {
-            transparent: 'transparent',
-            current: 'currentColor',
-            'white': '#ffffff',
-            'light-green': '#b0d391',
-            'dark-green': '#225209',
-            },
+
+        borderWidth: {
+            DEFAULT: '1px',
+            '0': '0',
+            '2': '2px',
+            '3': '3px',
+            '4': '4px',
+            '6': '6px',
+            '8': '8px',
+            '10': '10px',
+            '12': '12px',
+            '14': '14px',
+            '16': '16px',
+        },
+
 
     },
 

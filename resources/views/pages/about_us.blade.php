@@ -1,17 +1,132 @@
 <x-app-layout>
-    <div class="lg:py-10 md:py-5 sm:py-5 lt:py-5 lg:mt-10 xl:mt-16 md:mt-10 sm:mt-5 lt:mt-5 p-2">
-        <div class="max-w-7xl mx-auto xl:mb-44 lg:mb-44 md:mb-8 sm:mb-3 lt:mb-3">
-            <div class="xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full lt:w-full text-white">
-                <h2 class="uppercase xl:text-8xl lg:text-8xl md:text-4xl sm:text-2xl lt:text-2xl  ">{{ __('About Us') }}</h2>
-                <div class="xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 lt:w-full xl:text-2xl lg:text-2xl md:text-l sm:text-xs lt:text-xs lg:my-10 sm:my-5">
+    <div class="w-full">
+        <div class="w-full mb-20">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="py-3 uppercase font-bold w-full  text-white xl:text-3xl lg:text-3xl md:text-2l sm:text-xs lt:text-xs lg:my-20 sm:my-10">
                     If you want your health supplements to be successful, you need to partner with a manufacturer who
                     can provide great flavoring and great results.
                 </div>
             </div>
+            <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-16">
+                <div class="uppercase text-4xl text-white w-full py-px px-14">
+                    <h2 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('About Us') }}</h2>
+                </div>
+            </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-14 mx-auto xl:mb-44 lg:mb-44 md:mb-8 sm:mb-3 lt:mb-3">
+        <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10">
+            <div class="w-3/4 text-center">
+                <x-h2> {{ __('PuroVite Product Offerings: The Best in the Business! ') }}  </x-h2>
+            </div>
+
+            <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-around">
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">Powder</h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Nutritional Shake combinations</li>
+                        <li>Protein powders</li>
+                        <li>Collagen Proteins</li>
+                        <li>Hydration Formulas</li>
+                        <li>Electrolyte drink mix</li>
+                        <li>Green food powders</li>
+                        <li>Red berry powders</li>
+                        <li>Multi vitamin & mineral blends</li>
+                        <li>Pre and Post Workout Powders</li>
+                    </ul>
+                </div>
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">Capsules</h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Liquid filled Capsules</li>
+                        <li>Colored Capsules</li>
+                        <li>Imprinted Capsules</li>
+                        <li>Veggie Capsules</li>
+                        <li>NP Capsules</li>
+                        <li>Delayed release capsules</li>
+                    </ul>
+
+                </div>
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">Gummies</h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Multi Vitamins</li>
+                        <li>Prenatal Vitamins</li>
+                        <li>And many more</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-around xl:mt-10 lg:mt-10 md:mt-10">
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">
+                            Tablets
+                        </h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Pharmaceutical Glaze</li>
+                        <li>Sublingual</li>
+                        <li>Chewable</li>
+                        <li>Colored Coated Tablets</li>
+                        <li>Effervescent Tablets</li>
+                        <li>Enteric Coating Tablets</li>
+                        <li>Time Release</li>
+                        <li>Film Coating Tablets</li>
+                        <li>Custom shape & Embossed tablets</li>
+                    </ul>
+                </div>
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">Soft Gel</h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Omega’s</li>
+                        <li>Vitamin E</li>
+                        <li>Vitamin D</li>
+                        <li>And many more</li>
+                    </ul>
+
+                </div>
+                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
+                    <div class="flex justify-start">
+                        <x-arrow-list></x-arrow-list>
+                        <h3 class="text-3xl font-medium text-cyan-800">Packaging</h3>
+                    </div>
+                    <ul class="pl-10 list-disc">
+                        <li>Blisters</li>
+                        <li>Bottles</li>
+                        <li>Custom Color</li>
+                        <li>Boxes</li>
+                        <li>Gusset bags</li>
+                        <li>Flip Tops</li>
+                        <li>Lift & Pour</li>
+                        <li>Full Body Sleeve (Heat or Steam)</li>
+                        <li>Induction Seal</li>
+                        <li>Lift & Peel</li>
+                        <li>Labeling</li>
+                        <li>Single serve pouches</li>
+                        <li>Stick Packs</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-14 xl:mb-44 lg:mb-44 md:mb-8 sm:mb-3 lt:mb-3">
             <h2 class="uppercase lg:text-6xl lt:text-4xl md:text-4xl sm:text-2xl lt:text-2xl font-medium text-cyan-800 xl:mb-5 lg:mb-5 md:mb-5 sm:pb-8 lt:pb-8 "> {{ __('How Custom Supplement Manufacturing Can Help Your Business Succeed') }} </h2>
-            <div class="flex justify-between xl:flex-row lg:inline-flex md:flex-row sm:flex-col-reverse lt:flex-col-reverse">
+            <div
+                class="flex justify-between xl:flex-row lg:inline-flex md:flex-row sm:flex-col-reverse lt:flex-col-reverse">
                 <div class="xl:w-2/4 lg:w-2/4 md:w-full sm:w-full lt:w-full">
                     <div class="mb-10 text-justify">
                         At PuroVite, we are committed to helping our customers succeed. We offer a wide array of
@@ -46,113 +161,10 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10">
-            <h2 class="text-center uppercase lg:text-6xl lt:text-4xl md:text-4xl font-medium  xl:my-8 lg:my-8 md:my-5 sm:my-3 lt:my-3"> {{ __('PuroVite Product Offerings: The Best in the Business! ') }} </h2>
-            <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-around">
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-                        <div class="flex justify-start">
-                            <x-arrow-list></x-arrow-list>
-                            <h3 class="text-3xl font-medium text-cyan-800">Powder</h3>
-                        </div>
-                        <ul class="pl-10 list-disc">
-                            <li>Nutritional Shake combinations</li>
-                            <li>Protein powders</li>
-                            <li>Collagen Proteins</li>
-                            <li>Hydration Formulas</li>
-                            <li>Electrolyte drink mix</li>
-                            <li>Green food powders</li>
-                            <li>Red berry powders</li>
-                            <li>Multi vitamin & mineral blends</li>
-                            <li>Pre and Post Workout Powders</li>
-                        </ul>
-                </div>
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-                        <div class="flex justify-start">
-                            <x-arrow-list></x-arrow-list>
-                            <h3 class="text-3xl font-medium text-cyan-800">Capsules</h3>
-                        </div>
-                        <ul class="pl-10 list-disc">
-                            <li>Liquid filled Capsules</li>
-                            <li>Colored Capsules</li>
-                            <li>Imprinted Capsules</li>
-                            <li>Veggie Capsules</li>
-                            <li>NP Capsules</li>
-                            <li>Delayed release capsules</li>
-                        </ul>
 
-                </div>
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-                    <div class="flex justify-start">
-                        <x-arrow-list></x-arrow-list>
-                        <h3 class="text-3xl font-medium text-cyan-800">Gummies</h3>
-                    </div>
-                    <ul class="pl-10 list-disc">
-                        <li>Multi Vitamins</li>
-                        <li>Prenatal Vitamins</li>
-                        <li>And many more</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-around xl:mt-10 lg:mt-10 md:mt-10">
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-                        <div class="flex justify-start">
-                            <x-arrow-list></x-arrow-list>
-                            <h3 class="text-3xl font-medium text-cyan-800">
-                                Tablets
-                            </h3>
-                        </div>
-                        <ul class="pl-10 list-disc">
-                            <li>Pharmaceutical Glaze</li>
-                            <li>Sublingual</li>
-                            <li>Chewable</li>
-                            <li>Colored Coated Tablets</li>
-                            <li>Effervescent Tablets</li>
-                            <li>Enteric Coating Tablets</li>
-                            <li>Time Release</li>
-                            <li>Film Coating Tablets</li>
-                            <li>Custom shape & Embossed tablets</li>
-                        </ul>
-                </div>
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-
-                        <div class="flex justify-start">
-                            <x-arrow-list></x-arrow-list>
-                            <h3 class="text-3xl font-medium text-cyan-800">Soft Gel</h3>
-                        </div>
-                        <ul class="pl-10 list-disc">
-                            <li>Omega’s</li>
-                            <li>Vitamin E</li>
-                            <li>Vitamin D</li>
-                            <li>And many more</li>
-                        </ul>
-
-                </div>
-                <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-2 pl-16">
-                        <div class="flex justify-start">
-                            <x-arrow-list></x-arrow-list>
-                            <h3 class="text-3xl font-medium text-cyan-800">Packaging</h3>
-                        </div>
-                        <ul class="pl-10 list-disc">
-                            <li>Blisters</li>
-                            <li>Bottles</li>
-                            <li>Custom Color</li>
-                            <li>Boxes</li>
-                            <li>Gusset bags</li>
-                            <li>Flip Tops</li>
-                            <li>Lift & Pour</li>
-                            <li>Full Body Sleeve (Heat or Steam)</li>
-                            <li>Induction Seal</li>
-                            <li>Lift & Peel</li>
-                            <li>Labeling</li>
-                            <li>Single serve pouches</li>
-                            <li>Stick Packs</li>
-                        </ul>
-
-                </div>
-            </div>
-        </div>
         <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10 py-8">
-            <div class="xl:-ml-7 lg:-ml-7 md:-ml-7 flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-center">
+            <div
+                class="xl:-ml-7 lg:-ml-7 md:-ml-7 flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-center">
                 <div class="xl:w-5/12 lg:w-5/12 md:w-5/12 sm:w-full lt:w-full xl:pl-7 lg:pl-7 md:pl-7 sm:pb-2 lt:pb-2">
                     <img src="{{ asset('img/about_us_5.png') }}" alt="about_us_5">
                 </div>
@@ -197,7 +209,8 @@
                 </div>
                 <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full text-center">
                     <h4 class="uppercase text-2xl font-medium my-8 px-4 text-cyan-800">
-                        Formula Development / Enhancement:<br>The Winning Combination of Cutting-Edge Research and Careful
+                        Formula Development / Enhancement:<br>The Winning Combination of Cutting-Edge Research and
+                        Careful
                         Testing
                     </h4>
                     <div class="mb-10 px-8">
@@ -216,7 +229,8 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10">
-            <h2 class="uppercase lg:text-6xl lt:text-4xl md:text-4xl sm:text-2xl lt:text-2xl font-medium my-8 text-center text-gray-500">The Benefits of Working with a Leader in Dynamic
+            <h2 class="uppercase lg:text-6xl lt:text-4xl md:text-4xl sm:text-2xl lt:text-2xl font-medium my-8 text-center text-gray-500">
+                The Benefits of Working with a Leader in Dynamic
                 Flavor Development</h2>
             <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
                 <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-4 text-justify">
