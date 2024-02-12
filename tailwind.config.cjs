@@ -24,6 +24,8 @@ module.exports = {
                 '50%': '50%',
                 '60%': '60%',
                 '70%': '70%',
+                '80%': '80%',
+                '90%': '90%',
                 '100%': '100%',
                 '120%': '120%',
                 '150%': '150%',
@@ -56,6 +58,9 @@ module.exports = {
                 'manufacturing': "url('../img/manufacturing.png')",
                 'home': "url('../img/header.png')",
                 'app-top': "url('../img/header_2.png')",
+                'about-us-molecule': "url('../img/about_us/molecule-about-us.png')",
+                'about-us-image-line': "url('../img/about_us/image-line.png')",
+
             },
             colors: {
                 transparent: 'transparent',
