@@ -10,7 +10,7 @@
             </div>
             <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-16">
                 <div class="uppercase text-4xl text-white w-full py-px px-14">
-                    <h2 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('About Us') }}</h2>
+                    <h1 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('About Us') }}</h1>
                 </div>
             </div>
         </div>

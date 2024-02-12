@@ -60,6 +60,7 @@ module.exports = {
                 'app-top': "url('../img/header_2.png')",
                 'about-us-molecule': "url('../img/about_us/molecule-about-us.png')",
                 'about-us-image-line': "url('../img/about_us/image-line.png')",
+                'manufacturing-image-line': "url('../img/manufacturing/manufacturing-2.png')",
 
             },
             colors: {

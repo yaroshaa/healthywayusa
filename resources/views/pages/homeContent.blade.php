@@ -38,9 +38,9 @@
         </div>
 
         <div class="w-full bg-gray-700 border-t-6 absolute end-0 py-6">
-            <div class="uppercase text-4xl text-white w-full px-14">
+            <h1 class="uppercase text-4xl text-white w-full px-14">
                 Whatever your product idea may be, we can help you bring it to market quickly and efficiently
-            </div>
+            </h1>
         </div>
 
     </div>
