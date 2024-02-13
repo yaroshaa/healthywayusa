@@ -268,14 +268,14 @@
             <div
                 class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-items-stretch">
                 <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col">
-                    <div class="p-5">
+                    <div class="p-4">
                         <img src="{{ asset('img/facility/facility-5.png') }}" alt="facility-5">
                     </div>
                     <div>
                         <h3 class="uppercase text-xl font-medium text-center text-dark-green">
                             {{ __('Step 1: You Design Your Powder and Choose Packaging') }}
                         </h3>
-                        <div class="p-3">
+                        <div class="p-3 text-justify">
                             <p>Our extensive supply chain gives us access to nearly all types of packaging. If you're
                                 looking for innovative container designs, we can help you find the perfect option –
                                 whether
@@ -291,7 +291,7 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col-reverse">
-                    <div class="p-5">
+                    <div class="p-4">
                         <img src="{{ asset('img/facility/facility-6.png') }}" alt="facility-6">
                     </div>
                     <div>
@@ -315,7 +315,7 @@
                                     </ul>
                                 </div>
                             </div>
-                               <div>We have quality measures in place at every step to ensure the potency of active
+                               <div class="text-justify">We have quality measures in place at every step to ensure the potency of active
                                    ingredients and to prevent contamination. We offer certification criteria such as Certified Organic,
                                    TGA and several others. We can provide you with an estimated time for completion that is
                                    based on your individual needs.</div>
@@ -323,14 +323,14 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col">
-                    <div class="p-5">
-                        <img src="{{ asset('img/facility/facility-6.png') }}" alt="facility-6">
+                    <div class="p-4">
+                        <img src="{{ asset('img/facility/facility-7.png') }}" alt="facility-7">
                     </div>
                     <div>
                         <h3 class="uppercase text-xl font-medium text-center text-dark-green">
                             {{ __('Step 3: We Ship Your Powder') }}
                         </h3>
-                        <div class="p-3">
+                        <div class="p-3 text-justify">
                             <p>Once your order is complete, we carefully test it to ensure that it meets our high
                                 standards.
                                 Then, we ship it to you and provide you with tracking information so that you can follow
