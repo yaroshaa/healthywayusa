@@ -108,7 +108,7 @@
         </div>
         <div class="w-full bg-manufacturing-image-line py-72 bg-no-repeat bg-100% mt-24 mb-20">
         </div>
-        <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-1 lt:mt-1">
+        <div class="max-w-7xl mx-auto xl:mt-32 lg:mt-32 md:mt-32 sm:mt-1 lt:mt-1">
             <div class="max-w-7xl flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
                 <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full">
                     <x-h2 class="uppercase text-4xl font-medium xl:my-8 lg:my-8 md:my-8 sm:my-5 lt:my-5 px-2 text-gray-600 xl:text-center lg:text-center md:text-center">
@@ -148,13 +148,12 @@
 
                 </div>
                 <div
-                    class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full text-center xl:px-14 lg:px-14 md:px-14 sm:px-2 lt:px-2">
+                    class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full text-center xl:pl-14 lg:pl-14 md:pl-14 sm:pl-2 lt:pl-2">
                     <img src="{{ asset('img/manufacturing/manufacturing-3.png') }}" alt="manufacturing-3">
                 </div>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto py-10 ">
+        <div class="max-w-7xl mx-auto py-20 ">
             <div class="uppercase text-dark-green text-4xl text-center mb-10">Contact us today to learn more about how
                 we can help you grow your business.
             </div>
@@ -171,7 +170,6 @@
             </div>
             <br>
         </div>
-    </div>
     </div>
 </x-app-layout>
 

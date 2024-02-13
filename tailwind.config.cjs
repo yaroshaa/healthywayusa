@@ -61,6 +61,9 @@ module.exports = {
                 'about-us-molecule': "url('../img/about_us/molecule-about-us.png')",
                 'about-us-image-line': "url('../img/about_us/image-line.png')",
                 'manufacturing-image-line': "url('../img/manufacturing/manufacturing-2.png')",
+                'facility-image-line': "url('../img/facility/facility-image-line.png')",
+                'quality-image-line': "url('../img/quality/quality-image-line.png')",
+                'quality': "url('../img/quality/quality.svg')",
 
             },
             colors: {
