@@ -125,7 +125,7 @@
             </x-h2>
         </div>
         <div class="flex justify-start xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-10">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-16">
                 <img src="{{ asset('img/quality/quality-3.png') }}" alt="quality-3">
             </div>
             <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full pt-20 text-justify">

@@ -4,7 +4,20 @@
             {{ __('Add post') }}
         </x-white-button>
     @endif
-    <div class="lg:py-8 md:py-8 sm:py-5 lt:py-5 lg:mt-16 xl:mt-16 md:mt-8 sm:mt-0 lt:mt-0 p-2">
+    <div class="w-full">
+        <div class="w-full">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="py-12 font-bold w-full  text-white xl:text-3xl lg:text-3xl md:text-2l sm:text-xs lt:text-xs lg:my-16 sm:my-6">
+                    Added information
+                </div>
+            </div>
+            <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-16">
+                <div class="uppercase text-4xl text-white w-full px-14">
+                    <h1 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __(' Frequently Asked Questions') }}</h1>
+                </div>
+            </div>
+        </div>
         <div class="max-w-7xl mx-auto xl:mb-40 lg:mb-40 md:mb-8 sm:mb-3 lt:mb-3">
             <div class="w-4/5 text-white">
                 <h2 class="uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl">

@@ -1,14 +1,20 @@
 <x-app-layout>
-
-    <div class="lg:py-8 md:py-8 sm:py-5 lt:py-5 lg:mt-16 xl:mt-16 md:mt-8 sm:mt-0 lt:mt-0 p-2">
-        <div class="max-w-7xl mx-auto xl:mb-40 lg:mb-40 md:mb-8 sm:mb-3 lt:mb-3">
-            <div class="w-4/5 text-white">
-                <h2 class="uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl">
-                    {{ __('Blog List') }}
-                </h2>
-                <div class="p-2 xl:text-white lg:text-white md:text-gray-600 sm:text-gray-600 lt:text-gray-600 lg:my-16 sm:my-2 xl:w-3/4 lg:w-3/4 md:w-full sm:w-full lt:w-full sm:text-xs md:text-2xl">
+    <div class="w-full">
+        <div class="w-full">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="py-12 font-bold w-full  text-white xl:text-3xl lg:text-3xl md:text-2l sm:text-xs lt:text-xs lg:my-16 sm:my-6">
                     Blog, information...
                 </div>
+            </div>
+            <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-16">
+                <div class="uppercase text-4xl text-white w-full px-14">
+                    <h1 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('Blog List') }}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="w-4/5 text-black-800">
                 @if(Auth::user() && Auth::user()->hasRole('admin') && count($data['data']) > 0)
                     <a class="pl-3 inline-block hover:text-gray-700" href="{{ route('postcreate', ['key' => null]) }}">
                         {{ __('Add post') }}
@@ -22,7 +28,7 @@
                 @foreach($data['data'] as $post)
                     @php($counter++)
                     @if(Auth::user() && Auth::user()->hasRole('admin'))
-                    <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
+                    <div class="flex justify-start xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
                         <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
                             <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="">
                         </div>
@@ -68,7 +74,7 @@
                         </div>
                     </div>
                     @elseif($post['status'])
-                        <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
+                        <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col ">
                             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
                                 <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="">
                             </div>
@@ -90,7 +96,7 @@
                 @endforeach
 
             @else
-                <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
+                <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
                     <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
                         <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-2xl lt:text-2xl font-medium mb-8 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-cyan-800">
                             {{ __('No posts for display!') }}

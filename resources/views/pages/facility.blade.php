@@ -44,12 +44,15 @@
                         {{ __('Supplement Powder Manufacturing Services ') }}
                     </x-h2-small-text>
                     <div class="text-justify pr-10 ">
-                        <p>We specialize in manufacturing a variety of different types of protein powders, greens powders,
+                        <p>We specialize in manufacturing a variety of different types of protein powders, greens
+                            powders,
                             pre,
                             and post-workout powders, sports nutrition powders, collagen powders (bovine and marine),
-                            electrolyte powders, and vitamin powders. We can help you create custom powder blends to suit
+                            electrolyte powders, and vitamin powders. We can help you create custom powder blends to
+                            suit
                             your
-                            specific needs, and our team of experts is always available to answer any questions you may have
+                            specific needs, and our team of experts is always available to answer any questions you may
+                            have
                             about powder manufacturing. Here are some examples of popular types of powder: </p>
                     </div>
                 </div>
@@ -120,150 +123,151 @@
                     all regulatory requirements.</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-5">
-            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
-                    <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-xl lt:text-xl font-medium my-8 xl:text-left lg:text-left md:text-left sm:text-center lt:text-center text-dark-green">
-                        {{ __('Sweeteners') }}
-                    </h3>
-                    <div class="text-justify">
-                        <p>In some cases, sweeteners may be necessary. However, you can also choose not to use any
-                            type
-                            of sweetener. Some active ingredients are naturally bitter, bland, or metallic.
-                            Sweeteners
-                            can help offset those unfavorable tastes. These are the options that we offer for
-                            sweeteners:</p>
-                    </div>
-                    <div class="p-2">
-                        <ul class="list-disc pl-10">
-                            <li>Natural sweeteners</li>
-                            <li>Artificial sweeteners</li>
-                            <li>Combined sweeteners</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>Different sweeteners can be used in supplements, depending on the desired taste. Natural
-                            sweeteners, artificial sweeteners, and combined sweeteners are all options that can help
-                            offset any unfavorable tastes from active ingredients. The right choice of sweetener
-                            depends
-                            on your preferences or your target market’s preferences. For example, if you think that
-                            an
-                            all-natural supplement will be more attractive to your target market, you may choose a
-                            natural sweetener.</p>
-                    </div>
-                    <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl lt:text-2xl font-medium my-8 xl:text-left lg:text-left md:text-left sm:text-center lt:text-center text-dark-green">
-                        {{ __('Flavors') }}
-                    </h3>
-                    <div class="text-justify">
-                        <p>Flavors are often used in combination with sweeteners to create the desired taste.
-                            Typical
-                            flavors include chocolate, vanilla, and many others. If the powder you choose does not
-                            have
-                            an unpleasant natural taste, you may opt to skip the flavors. When you prefer or need
-                            flavoring added, these are your choices:</p>
-                    </div>
-                    <div class="p-2">
-                        <ul class="list-disc pl-10">
-                            <li>Natural flavors</li>
-                            <li>Artificial flavors</li>
-                            <li>Combined flavors</li>
-                        </ul>
-                    </div>
-                    <div><p>The decision is up to you and what you think your target market will want. Ultimately,
-                            it
-                            comes down to personal preference. </p></div>
+        <div class="w-full bg-molecule-one-svg bg-no-repeat bg-right-bottom-10 bg-70%">
+            <div class="max-w-7xl mx-auto mt-5">
+                <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                        <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-xl lt:text-xl font-medium my-8 xl:text-left lg:text-left md:text-left sm:text-center lt:text-center text-dark-green">
+                            {{ __('Sweeteners') }}
+                        </h3>
+                        <div class="text-justify">
+                            <p>In some cases, sweeteners may be necessary. However, you can also choose not to use any
+                                type
+                                of sweetener. Some active ingredients are naturally bitter, bland, or metallic.
+                                Sweeteners
+                                can help offset those unfavorable tastes. These are the options that we offer for
+                                sweeteners:</p>
+                        </div>
+                        <div class="p-2">
+                            <ul class="list-disc pl-10">
+                                <li>Natural sweeteners</li>
+                                <li>Artificial sweeteners</li>
+                                <li>Combined sweeteners</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Different sweeteners can be used in supplements, depending on the desired taste. Natural
+                                sweeteners, artificial sweeteners, and combined sweeteners are all options that can help
+                                offset any unfavorable tastes from active ingredients. The right choice of sweetener
+                                depends
+                                on your preferences or your target market’s preferences. For example, if you think that
+                                an
+                                all-natural supplement will be more attractive to your target market, you may choose a
+                                natural sweetener.</p>
+                        </div>
+                        <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl lt:text-2xl font-medium my-8 xl:text-left lg:text-left md:text-left sm:text-center lt:text-center text-dark-green">
+                            {{ __('Flavors') }}
+                        </h3>
+                        <div class="text-justify">
+                            <p>Flavors are often used in combination with sweeteners to create the desired taste.
+                                Typical
+                                flavors include chocolate, vanilla, and many others. If the powder you choose does not
+                                have
+                                an unpleasant natural taste, you may opt to skip the flavors. When you prefer or need
+                                flavoring added, these are your choices:</p>
+                        </div>
+                        <div class="p-2">
+                            <ul class="list-disc pl-10">
+                                <li>Natural flavors</li>
+                                <li>Artificial flavors</li>
+                                <li>Combined flavors</li>
+                            </ul>
+                        </div>
+                        <div><p>The decision is up to you and what you think your target market will want. Ultimately,
+                                it
+                                comes down to personal preference. </p></div>
 
+                    </div>
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                        <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-3.png') }}"
+                             alt="facility-3">
+                    </div>
                 </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
-                    <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-3.png') }}"
-                         alt="facility-3">
+                <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                        <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-4.png') }}"
+                             alt="facility-4">
+                    </div>
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                        <h3 class="uppercase text-4xl font-medium my-8 pt-5 text-left text-dark-green">
+                            {{ __('Colors') }}
+                        </h3>
+                        <div class="text-justify">
+                            <p>Powders often have a bland appearance in their natural form, so adding color can make
+                                them
+                                more appealing. For example, you may want to use a color that coordinates with a flavor.
+                                For
+                                example, if you have a strawberry-flavored supplement, using a pink color can make it
+                                more
+                                appealing to customers. However, whether to add coloring or not is entirely up to you.
+                                We
+                                offer the following types of colors:</p>
+                        </div>
+                        <div class="p-2">
+                            <ul class="list-disc pl-10">
+                                <li>Natural colors</li>
+                                <li>Artificial colors</li>
+                                <li>Combined colors</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Whatever you decide, we can help you find the perfect color for your powder.</p>
+                        </div>
+                        <h3 class="uppercase text-4xl font-medium my-8 pt-5 text-left text-dark-green">
+                            {{ __('Main Ingredients') }}
+                        </h3>
+                        <div class="text-justify">
+                            <p>As a dedicated powder manufacturer, we can help you select ingredients for your needs and
+                                preferences. For example, if you want to create a powder that is mixed with water or
+                                milk
+                                for a meal replacement for elderly people, we can recommend vitamins that support the
+                                vision
+                                and joint health to add. Or, if you are looking for a powder with specific herbs and
+                                other
+                                nutritious ingredients, we can source those for you as well. Whatever your goals may be,
+                                we
+                                will work with you to create a custom supplement powder that meets your requirements.
+                                Here
+                                are some examples of popular active ingredients:</p>
+                        </div>
+                        <div class="p-2">
+                            <ul class="list-disc pl-10">
+                                <li>Whey protein</li>
+                                <li>Plant protein</li>
+                                <li>Collagen</li>
+                                <li>Fiber</li>
+                                <li>Vitamin and mineral blends</li>
+                                <li>Greens powders</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
-                    <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-4.png') }}"
-                         alt="facility-4">
-                </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
-                    <h3 class="uppercase text-4xl font-medium my-8 pt-5 text-left text-dark-green">
-                        {{ __('Colors') }}
-                    </h3>
-                    <div class="text-justify">
-                        <p>Powders often have a bland appearance in their natural form, so adding color can make
-                            them
-                            more appealing. For example, you may want to use a color that coordinates with a flavor.
-                            For
-                            example, if you have a strawberry-flavored supplement, using a pink color can make it
-                            more
-                            appealing to customers. However, whether to add coloring or not is entirely up to you.
-                            We
-                            offer the following types of colors:</p>
-                    </div>
-                    <div class="p-2">
-                        <ul class="list-disc pl-10">
-                            <li>Natural colors</li>
-                            <li>Artificial colors</li>
-                            <li>Combined colors</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>Whatever you decide, we can help you find the perfect color for your powder.</p>
-                    </div>
-                    <h3 class="uppercase text-4xl font-medium my-8 pt-5 text-left text-dark-green">
-                        {{ __('Main Ingredients') }}
-                    </h3>
-                    <div class="text-justify">
-                        <p>As a dedicated powder manufacturer, we can help you select ingredients for your needs and
-                            preferences. For example, if you want to create a powder that is mixed with water or
-                            milk
-                            for a meal replacement for elderly people, we can recommend vitamins that support the
-                            vision
-                            and joint health to add. Or, if you are looking for a powder with specific herbs and
-                            other
-                            nutritious ingredients, we can source those for you as well. Whatever your goals may be,
-                            we
-                            will work with you to create a custom supplement powder that meets your requirements.
-                            Here
-                            are some examples of popular active ingredients:</p>
-                    </div>
-                    <div class="p-2">
-                        <ul class="list-disc pl-10">
-                            <li>Whey protein</li>
-                            <li>Plant protein</li>
-                            <li>Collagen</li>
-                            <li>Fiber</li>
-                            <li>Vitamin and mineral blends</li>
-                            <li>Greens powders</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto mt-10">
-            <div class="flex flex-col items-center w-full p-3">
+            <div class="max-w-7xl mx-auto mt-10">
+                <div class="flex flex-col items-center w-full p-3">
                     <x-h2>
                         {{ __('Powder Mixtures') }}
                     </x-h2>
-            </div>
-            <div class="flex justify-items-stretch ">
-                <div class="w-full">
-                    <div class="p-3">
-                        <p>There are different types of powder mixtures, each with its own benefits and drawbacks.
-                            Cohesive mixtures, for example, have additives that ensure even distribution of the
-                            ingredients. This makes them ideal for synergistic blending. Ordered mixtures, on the
-                            other
-                            hand, are created through very precise processes that have specific orders for the
-                            steps.
-                            Free-flowing mixtures are better for all-natural supplements and do not include
-                            additives
-                            that other mixtures have. Not sure which type of mixture you need? We can discuss shelf
-                            life, blending, and other issues with you to help you make the best decision for your
-                            needs. </p>
+                </div>
+                <div class="flex justify-items-stretch ">
+                    <div class="w-full">
+                        <div class="p-3">
+                            <p>There are different types of powder mixtures, each with its own benefits and drawbacks.
+                                Cohesive mixtures, for example, have additives that ensure even distribution of the
+                                ingredients. This makes them ideal for synergistic blending. Ordered mixtures, on the
+                                other
+                                hand, are created through very precise processes that have specific orders for the
+                                steps.
+                                Free-flowing mixtures are better for all-natural supplements and do not include
+                                additives
+                                that other mixtures have. Not sure which type of mixture you need? We can discuss shelf
+                                life, blending, and other issues with you to help you make the best decision for your
+                                needs. </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="max-w-7xl mx-auto mt-5">
             <div
                 class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-items-stretch">
@@ -315,10 +319,13 @@
                                     </ul>
                                 </div>
                             </div>
-                               <div class="text-justify">We have quality measures in place at every step to ensure the potency of active
-                                   ingredients and to prevent contamination. We offer certification criteria such as Certified Organic,
-                                   TGA and several others. We can provide you with an estimated time for completion that is
-                                   based on your individual needs.</div>
+                            <div class="text-justify">We have quality measures in place at every step to ensure the
+                                potency of active
+                                ingredients and to prevent contamination. We offer certification criteria such as
+                                Certified Organic,
+                                TGA and several others. We can provide you with an estimated time for completion that is
+                                based on your individual needs.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,22 +354,22 @@
             <div
                 class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-items-stretch pt-5">
                 <div class="w-full flex flex-col p-5 items-center">
-                        <x-h2>
-                            {{ __('Benefits of Selling Powder Supplements') }}
-                        </x-h2>
+                    <x-h2>
+                        {{ __('Benefits of Selling Powder Supplements') }}
+                    </x-h2>
                     <div class="text-center mt-5">
                         There are many reasons why companies choose powder supplements over other delivery forms,
-                            such as pills or capsules. Powder supplements can often contain higher doses than their
-                            tablet or capsule counterparts. Additionally, powders that are designed to taste good
-                            can be
-                            enjoyable for your customers to consume. Powders are also easy to absorb and take,
-                            making
-                            them a convenient option for busy individuals. Finally, powders give your customers an
-                            easy
-                            way to take partial doses if they prefer. Ultimately, powder supplements offer a
-                            versatile
-                            and convenient option for those looking to improve their health and wellness
-                            regimen.
+                        such as pills or capsules. Powder supplements can often contain higher doses than their
+                        tablet or capsule counterparts. Additionally, powders that are designed to taste good
+                        can be
+                        enjoyable for your customers to consume. Powders are also easy to absorb and take,
+                        making
+                        them a convenient option for busy individuals. Finally, powders give your customers an
+                        easy
+                        way to take partial doses if they prefer. Ultimately, powder supplements offer a
+                        versatile
+                        and convenient option for those looking to improve their health and wellness
+                        regimen.
                     </div>
                 </div>
             </div>
@@ -384,7 +391,8 @@
                             <li>Are your testing procedures adequate?</li>
                             <li>Are dosage measurements accurate?</li>
                         </ul>
-                            <div class="text-justify">Our company only uses ingredients and packaging supplies from suppliers that place
+                        <div class="text-justify">Our company only uses ingredients and packaging supplies from
+                            suppliers that place
                             emphasis
                             on safety, sanitation, and quality - just like we do. We're also proud to offer several
                             respected manufacturing certifications as a testament to our commitment to quality. We
@@ -395,7 +403,8 @@
                             for distribution and verify that the dosing information is correct. When you choose us
                             as
                             your powder supplement manufacturer in the USA, you can rest assured that you're getting
-                            safe, high-quality, and accurately measured products.</div>
+                            safe, high-quality, and accurately measured products.
+                        </div>
                     </div>
                 </div>
                 <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-6">
@@ -407,20 +416,19 @@
                     </h4>
                     <div class="text-justify">
                         Are you looking for a reliable powder manufacturer? We can help! We specialize in complex
-                            research, development, flavoring, and formulation requests. Our packaging and delivery
-                            form
-                            choices span 95% of available products. Plus, our customer service policies and support
-                            team
-                            are superior. You'll have your own dedicated account executive who will make sure all
-                            your
-                            needs are met. Our company has worked with several Fortune 500 companies and businesses
-                            of
-                            all sizes. Contact us today to learn more about our powder manufacturing services.
+                        research, development, flavoring, and formulation requests. Our packaging and delivery
+                        form
+                        choices span 95% of available products. Plus, our customer service policies and support
+                        team
+                        are superior. You'll have your own dedicated account executive who will make sure all
+                        your
+                        needs are met. Our company has worked with several Fortune 500 companies and businesses
+                        of
+                        all sizes. Contact us today to learn more about our powder manufacturing services.
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </x-app-layout>
 

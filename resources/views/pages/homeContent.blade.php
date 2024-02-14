@@ -199,7 +199,7 @@ PuroVite is a nutraceutical contract manufacturer that can help you develop, tes
                 <x-h2>{{ __('Services') }}</x-h2>
                 <div>
                     <div>
-                        <h3 class="text-3xl font-medium text-cyan-800 mt-5">{{ __('Filfulment services') }}</h3>
+                        <x-h3-black>{{ __('Filfulment services') }}</x-h3-black>
                         <div class="mt-10">
                             <x-read-more-button :href="route('faq')" :active="request()->routeIs('faq')">
                                 {{ __('Read more') }}
@@ -207,7 +207,7 @@ PuroVite is a nutraceutical contract manufacturer that can help you develop, tes
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-3xl font-medium text-cyan-800 mt-5">{{ __('Regulatory services') }}</h3>
+                        <x-h3-black>{{ __('Regulatory services') }}</x-h3-black>
                         <div class="mt-10">
                             <x-read-more-button :href="route('services')" :active="request()->routeIs('faq')">
                                 {{ __('Read more') }}

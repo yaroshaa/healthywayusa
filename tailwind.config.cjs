@@ -32,6 +32,22 @@ module.exports = {
                 '200%': '200%',
                 '16': '4rem',
             },
+            backgroundPosition: {
+                bottom: 'bottom',
+                'bottom-4': 'center bottom 1rem',
+                center: 'center',
+                left: 'left',
+                'left-bottom': 'left bottom',
+                'left-top': 'left top',
+                'left-10-top': 'left -30rem top',
+                right: 'right',
+                'right-bottom': 'right bottom',
+                'right-bottom-10': 'right bottom -10rem',
+                'right-top': 'right top',
+                'right-15-top': 'right -15rem top',
+                top: 'top',
+                'top-4': 'center top 1rem',
+            },
             screens: {
                 'lt': '359px',
                 // => @media (min-width: 360px) { ... }
@@ -54,7 +70,8 @@ module.exports = {
             backgroundImage: {
                 'molecule-left': "url('../img/molecule-left.png')",
                 'molecule-right': "url('../img/molecule-right.png')",
-                // 'molecule-right': "url('../img/molecule-1.svg')",
+                'molecule-one-svg': "url('../img/molecule-1.svg')",
+                'molecule-two-svg': "url('../img/molecule-2.svg')",
                 'manufacturing': "url('../img/manufacturing.png')",
                 'home': "url('../img/header.png')",
                 'app-top': "url('../img/header_2.png')",
