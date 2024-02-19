@@ -29,21 +29,14 @@ use App\Http\Controllers\SearchController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('/');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// Pages
+Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/about_us', [PageController::class, 'index'])->name('about_us');
 Route::get('/manufacturing', [PageController::class, 'index'])->name('manufacturing');
 Route::get('/facility', [PageController::class, 'index'])->name('facility');
@@ -54,6 +47,8 @@ Route::get('/services', [PageController::class, 'index'])->name('services');
 // Contacts
 Route::get('/contacts', [ContactController::class, 'index'])->name('contacts');
 Route::post('/contacts', [ContactController::class, 'send'])->name('contactsSend');
+
+// Search
 Route::post('/search', [SearchController::class, 'index'])->name('search');
 
 Route::prefix('faq')->group(function () {
@@ -64,6 +59,7 @@ Route::prefix('faq')->group(function () {
     Route::post('/{id}/delete', [FaqController::class, 'delete'])->name('faqdelete');
 });
 
+// Settings
 Route::prefix('settings')->group(function () {
     Route::get('/', [SettingsController::class, 'index'])->name('settings');
     Route::post('/store', [SettingsController::class, 'store'])->name('settingsstore');
@@ -77,10 +73,7 @@ Route::prefix('settings')->group(function () {
     Route::post('/contact/{id}/delete', [ContactController::class, 'delete'])->name('contactdelete');
 });
 
-
-
-
-
+// Blog
 Route::prefix('blog')->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
     Route::get('/add', [BlogController::class, 'create'])->name('postcreate');

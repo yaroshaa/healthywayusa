@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.home-bg {
-    background: url("../img/header.png") no-repeat;
-}
-.app-top-bg {
-    background: url("../img/header_2.png") no-repeat;
-}
-
-.footer-bg {
-    background: url("../img/footer.png") no-repeat;
-}
-
 .hexagon-wrapper{
     width: 48px;
     height: 48px;

@@ -1,19 +1,11 @@
 <x-app-layout>
-
-    <div class="w-full mb-20">
-        <div class="max-w-7xl mx-auto">
-            <div
-                class="py-10 mt-5 uppercase font-bold w-full  text-white xl:text-3xl lg:text-3xl md:text-2l sm:text-xs lt:text-xs">
-                QA Associates oversee every aspect of the manufacturing process, from receipt of raw materials
-                through delivery of finished products to ensure that established in-process specifications are met.
-            </div>
-        </div>
-        <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-12">
-            <div class="uppercase text-4xl text-white w-full py-px px-14">
-                <h1 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('Quality Control & Quality Assurance') }}</h1>
-            </div>
-        </div>
-    </div>
+    <x-top-block>
+        <x-slogan>
+            QA Associates oversee every aspect of the manufacturing process, from receipt of raw materials
+            through delivery of finished products to ensure that established in-process specifications are met.
+        </x-slogan>
+        <x-h1>{{ __('Quality Control & Quality Assurance') }}</x-h1>
+    </x-top-block>
     <div class="max-w-7xl mx-auto mb-5">
         <div class="flex justify-center xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
             <div class="w-full">
@@ -78,7 +70,6 @@
     </div>
     <div class="w-full bg-quality-image-line py-72 bg-no-repeat bg-100% mt-20 mb-20">
     </div>
-
     <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-3 lt:mt-3">
         <div class="flex lg:flex-row xl:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-2/5 lg:w-2/5 md:w-2/5 sm:w-full lt:w-full">
@@ -117,7 +108,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-3 lt:mt-3 my-10">
         <div class="flex flex-col w-full items-center text-center">
             <x-h2>
@@ -146,5 +136,4 @@
             </div>
         </div>
     </div>
-
 </x-app-layout>

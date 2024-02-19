@@ -1,17 +1,10 @@
 <x-app-layout>
-    <div class="w-full mb-20">
-        <div class="max-w-7xl mx-auto">
-            <div
-                class="py-4 uppercase font-bold w-full  text-white xl:text-3xl lg:text-3xl md:text-2l sm:text-xs lt:text-xs lg:my-24 sm:my-10">
-                No matter what your specific needs are, we are here to help
-            </div>
-        </div>
-        <div class="w-full bg-black/40 border-t-6 end-0 py-10 mt-22">
-            <div class="uppercase text-4xl text-white w-full px-14">
-                <h1 class="font-bold uppercase xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl lt:text-2xl text-center ">{{ __('Turnkey Production Solutions') }}</h1>
-            </div>
-        </div>
-    </div>
+    <x-top-block>
+        <x-slogan>
+            No matter what your specific needs are, we are here to help
+        </x-slogan>
+        <x-h1>{{ __('Turnkey Production Solutions') }}</x-h1>
+    </x-top-block>
     <div class="w-full bg-molecule-two-svg bg-no-repeat bg-left-10-top bg-90%">
         <div class="max-w-7xl mx-auto pt-2 xl:mb-20 lg:mb-20 md:mb-8 sm:mb-3 lt:mb-3">
             <div class="w-full flex flex-col items-center mb-10">
@@ -178,7 +171,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-7xl mx-auto ">
         <div class="w-full flex flex-col items-center">
             <x-h2>{{ __('Capsule Manufacturing: How Does it Work?') }}</x-h2>
@@ -205,7 +197,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-7xl mx-auto xl:mb-20 lg:mb-20 md:mb-8 sm:mb-3 lt:mb-3 bg-molecule-one-svg bg-no-repeat bg-70% bg-center from-transparent">
         <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-6">
@@ -310,7 +301,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-7xl mx-auto">
         <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5">
@@ -349,7 +339,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-7xl mx-auto mt-10 p-6">
         <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5">

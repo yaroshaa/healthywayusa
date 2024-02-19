@@ -30,6 +30,7 @@ module.exports = {
                 '120%': '120%',
                 '150%': '150%',
                 '200%': '200%',
+                '300%': '300%',
                 '16': '4rem',
             },
             backgroundPosition: {
@@ -75,6 +76,7 @@ module.exports = {
                 'manufacturing': "url('../img/manufacturing.png')",
                 'home': "url('../img/header.png')",
                 'app-top': "url('../img/header_2.png')",
+                'footer': "url('../img/footer.png')",
                 'about-us-molecule': "url('../img/about_us/molecule-about-us.png')",
                 'about-us-image-line': "url('../img/about_us/image-line.png')",
                 'manufacturing-image-line': "url('../img/manufacturing/manufacturing-2.png')",
@@ -89,27 +91,26 @@ module.exports = {
                 'white': '#ffffff',
                 'light-green': '#b0d391',
                 'dark-green': '#225209',
+                'nav-green': '#007e00',
 
 
 
             },
+            borderWidth: {
+                DEFAULT: '1px',
+                '0': '0',
+                '2': '2px',
+                '3': '3px',
+                '4': '4px',
+                '6': '6px',
+                '8': '8px',
+                '10': '10px',
+                '12': '12px',
+                '14': '14px',
+                '16': '16px',
+            },
 
         },
-
-        borderWidth: {
-            DEFAULT: '1px',
-            '0': '0',
-            '2': '2px',
-            '3': '3px',
-            '4': '4px',
-            '6': '6px',
-            '8': '8px',
-            '10': '10px',
-            '12': '12px',
-            '14': '14px',
-            '16': '16px',
-        },
-
 
     },
 

@@ -1,6 +1,5 @@
 <svg
     id="svg2"
-    width="auto"
     height="40"
     viewBox="0 0 849.99991 180">
 
