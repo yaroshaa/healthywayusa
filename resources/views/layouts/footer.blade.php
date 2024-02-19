@@ -1,4 +1,5 @@
-<footer class="bg-footer bg-bottom bg-no-repeat bg-cover w-full text-white xl:py-14 lg:py-8 md:py-8 sm:py-3 lt:py-3">
+
+<footer class="bg-footer bg-left-bottom bg-no-repeat bg-cover w-full text-white xl:py-14 lg:py-8 md:py-8 sm:py-3 lt:py-3">
     <div class="max-w-7xl mx-auto xl:pt-10 lg:pt-10 md:pt-5 sm:pt-0 lt:pt-0">
         <div class="flex xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse lt:flex-col-reverse">
             <div class="flex xl:flex-col lg:flex-col md:flex-row sm:flex-row lt:flex-col xl:items-start lg:items-start  md:justify-around sm:justify-around items-center xl:w-2/5 lg:w-2/5 md:w-full sm:w-full lt:w-full p-2 xl:pl-10 lg:pl-10 md:pl-5 sm:pl-5 lt:pl-02 xl:mt-0 lg:mt-0 md:mt-8 sm:mt-8 lt:mt-0  ">

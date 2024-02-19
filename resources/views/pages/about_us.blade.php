@@ -121,7 +121,7 @@
 
     </div>
     <div
-        class="w-full bg-about-us-image-line py-32 bg-no-repeat lg:bg-100% xl:bg-100% md:bg-100% sm:bg-150% lt:bg-150% mt-24 mb-20">
+        class="w-full bg-about-us-image-line py-32 bg-no-repeat bg-cover  mt-24 mb-20">
     </div>
     <div class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10">
         <div class="w-full  text-center my-20">
