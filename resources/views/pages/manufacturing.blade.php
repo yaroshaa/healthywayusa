@@ -6,7 +6,7 @@
         <x-h1>{{ __('Manufacturing') }}</x-h1>
     </x-top-block>
     <div class="max-w-7xl mx-auto pt-14">
-        <div class="flex items-center flex-col text-center">
+        <div class="flex items-center flex-col text-center p-5">
             <div class="w-full text-dark-green uppercase text-3xl ">
                 When it comes to finding a reliable and reputable manufacturing partner for your nutrition
                 supplements, look no further than Healthyway Production
@@ -19,12 +19,12 @@
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto xl:mt-5 lg:mt-5 md:mt-5 sm:mt-3 lt:mt-3">
+    <div class="max-w-7xl mx-auto">
         <div
             class="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col justify-around">
             <div class="flex flex-col xl:w-1/3 lg:w-1/3 md:w-full sm:w-full lt:w-full p-5">
                 <div class="text-justify  text-sm">
-                    <div class="flex justify-center">
+                    <div class="flex justify-center mb-10 px-3">
                         <x-h2>Blending</x-h2>
                     </div>
                     <div>Looking for the perfect blender for your business?
@@ -46,12 +46,12 @@
                 </div>
             </div>
             <div
-                class="flex flex-col xl:w-1/3 lg:w-1/3 md:w-full sm:w-full lt:w-full mt-12 p-5">
+                class="flex flex-col xl:w-1/3 lg:w-1/3 md:w-full sm:w-full lt:w-full xl:p-3 lg:p-3 md:p-28 sm:p-5 lt:p-3">
                 <img src="{{ asset('img/manufacturing/manufacturing-1.png') }}" alt="manufacturing-1">
             </div>
             <div class="flex flex-col xl:w-1/3 lg:w-1/3 md:w-full sm:w-full lt:w-full p-5">
                 <div class="text-justify text-sm">
-                    <div class="flex justify-center">
+                    <div class="flex justify-center mb-10 px-3">
                         <x-h2>Tableting and Coating</x-h2>
                     </div>
                     <div>High-speed tablet presses and Acela coating pans.</div>
@@ -70,13 +70,12 @@
         <div class="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col justify-around">
             <div
                 class="flex flex-col w-full sm:mb-8 lt:mb-8 xl:p-2 lg:p-2 md:p-2">
-                <div class="xl:pl-8 lg:pl-8 md:pl-8 sm:pl-2 lt:pl-2 xl:mt-16 lg:mt-16 md:mt-16 sm:mt-8 lt:mt-8">
-                    <div class="flex justify-center pb-8">
-                        <x-h2>Packaging (tablets/ capsules/
-                            powders)
+                <div class="xl:mt-16 lg:mt-16 md:mt-16 sm:mt-8 lt:mt-8">
+                    <div class="flex justify-center pb-8 w-11/12 p-3 xl:pl-14 lg:pl-14 md:pl-12 sm:pl-10 lt:pl-5">
+                        <x-h2>Packaging (tablets / capsules / powders)
                         </x-h2>
                     </div>
-                    <div class="text-justify">
+                    <div class="text-justify p-3">
                         <div>At PuroVite, we have a combined fully automated lines and semiautomatic counters
                             that can produce over 200,000 bottles of nutrition supplements per day. This allows
                             us to meet the high demand for these products while maintaining a consistent level
@@ -98,17 +97,19 @@
         </div>
 
     </div>
-    <div class="w-full bg-manufacturing-image-line py-72 bg-no-repeat bg-100% mt-24 mb-20">
+    <div class="w-full bg-manufacturing-image-line py-72 bg-no-repeat bg-cover mt-24 mb-20">
     </div>
     <div class="max-w-7xl mx-auto xl:mt-32 lg:mt-32 md:mt-32 sm:mt-1 lt:mt-1">
         <div class="max-w-7xl flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
             <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full">
-                <x-h2
-                    class="uppercase text-4xl font-medium xl:my-8 lg:my-8 md:my-8 sm:my-5 lt:my-5 px-2 text-gray-600 xl:text-center lg:text-center md:text-center">
-                    Encapsulation (powder)
-                </x-h2>
-                <div class="mb-10 px-8 sm:px-4">
-                    <ul class="list-disc pl-8">
+                <div class="flex justify-center pb-8 w-11/12 p-3">
+                    <x-h2
+                        class="uppercase text-4xl font-medium xl:my-8 lg:my-8 md:my-8 sm:my-5 lt:my-5 px-2 text-gray-600 xl:text-center lg:text-center md:text-center">
+                        Encapsulation (powder)
+                    </x-h2>
+                </div>
+                <div class="mb-10 px-8 sm:px-8">
+                    <ul class="list-disc pl-8 sm:pl-0 lt:pl-0 text-justify">
                         <li>Automatic and Semi-Automatic capsule machines.</li>
                         <li>Annual production capability exceeds 4 billion capsules</li>
                         <li>Gelatin or vegetable capsules may be produced in the following sizes: “000”, “00”,
@@ -116,12 +117,14 @@
                         </li>
                     </ul>
                 </div>
-                <x-h2
-                    class="uppercase text-4xl font-medium my-8 px-4 text-gray-600 xl:text-center lg:text-center md:text-center">
-                    Encapsulation (liquid)
-                </x-h2>
+                <div class="flex justify-center pb-8 w-11/12 p-3">
+                    <x-h2
+                        class="uppercase text-4xl font-medium my-8 px-4 text-gray-600 xl:text-center lg:text-center md:text-center">
+                        Encapsulation (liquid)
+                    </x-h2>
+                </div>
                 <div class="mb-10 px-8">
-                    <ul class="list-disc">
+                    <ul class="list-disc text-justify">
                         <li>PuroVite has a state-of-the-art Liquid Capsule Department equipped with three
                             liquid-filling machines and banders. This allows us to produce two-piece liquid
                             capsules that are of the highest quality and meet all industry standards.
@@ -142,12 +145,12 @@
 
             </div>
             <div
-                class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full text-center xl:pl-14 lg:pl-14 md:pl-14 sm:pl-2 lt:pl-2">
+                class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full text-center  xl:pl-12 lg:pl-0 md:pl-10 xl:p-2 lg:p-2 md:p-10 sm:p-14 lt:p-5">
                 <img src="{{ asset('img/manufacturing/manufacturing-3.png') }}" alt="manufacturing-3">
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto py-20 ">
+    <div class="max-w-7xl mx-auto py-20 p-2">
         <div class="uppercase text-dark-green text-4xl text-center mb-10">Contact us today to learn more about how
             we can help you grow your business.
         </div>

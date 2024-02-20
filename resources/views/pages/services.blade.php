@@ -5,38 +5,36 @@
         </x-slogan>
         <x-h1>{{ __('Turnkey Production Solutions') }}</x-h1>
     </x-top-block>
-    <div class="w-full bg-molecule-two-svg bg-no-repeat bg-left-10-top bg-90%">
-        <div class="max-w-7xl mx-auto pt-2 xl:mb-20 lg:mb-20 md:mb-8 sm:mb-3 lt:mb-3">
-            <div class="w-full flex flex-col items-center mb-10">
+    <div
+        class="w-full bg-molecule-two-svg bg-no-repeat bg-left-10-top bg-90% pt-16 xl:mb-14 lg:mb-14 md:mb-10 sm:mb-3 lt:mb-3">
+        <div class="max-w-7xl mx-auto pt-2 flex flex-col items-center">
+            <div class="xl:w-full lg:w-9/12 md:w-9/12 sm:w-10/12 lt:w-11/12 flex justify-center mb-5 px-5">
                 <x-h2>
                     Private label capsule manufacturing services
                 </x-h2>
             </div>
-            <div class="w-full ">
-                <div class="mb-10 text-justify">
-                    <p>When it comes to finding a reliable private-label capsule manufacturer, PuroVite is a name
-                        that consistently comes up as a top choice. We boast high-capacity production capabilities,
-                        and our team is dedicated to ensuring that every capsule we produce meets the highest
-                        quality standards. We are also certified by numerous organizations, so you can be confident
-                        that we will deliver on our promises.</p><br>
-                    <p>No matter what your specific needs are, we are here to help. We can assist with formulation,
-                        capsule type, and packaging so that you can get the perfect product for your needs.</p><br>
-                    <p>As a private-label capsule manufacturer, we offer turnkey production services that are highly
-                        customizable. This means you can choose the product you need to elevate your brand above the
-                        competition. Size, appearance, formulation, and flavor can all be customized to your liking.
-                        We’ll work with you to bring your product to market, guiding you along the way. This way,
-                        you can focus on what you do best – running your business! </p>
-                </div>
+            <div class="text-justify p-5">
+                <p>When it comes to finding a reliable private-label capsule manufacturer, PuroVite is a name
+                    that consistently comes up as a top choice. We boast high-capacity production capabilities,
+                    and our team is dedicated to ensuring that every capsule we produce meets the highest
+                    quality standards. We are also certified by numerous organizations, so you can be confident
+                    that we will deliver on our promises.</p><br>
+                <p>No matter what your specific needs are, we are here to help. We can assist with formulation,
+                    capsule type, and packaging so that you can get the perfect product for your needs.</p><br>
+                <p>As a private-label capsule manufacturer, we offer turnkey production services that are highly
+                    customizable. This means you can choose the product you need to elevate your brand above the
+                    competition. Size, appearance, formulation, and flavor can all be customized to your liking.
+                    We’ll work with you to bring your product to market, guiding you along the way. This way,
+                    you can focus on what you do best – running your business! </p>
             </div>
-
         </div>
         <div class="max-w-7xl mx-auto">
             <div class="flex lg:flex-row xl:flex-row md:flex-row sm:flex-col lt:flex-col">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full">
-                    <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-5 pb-0">
+                    <div class="xl:w-full lg:w-full md:w-full sm:w-10/12 lt:w-full flex flex-col items-center px-5">
                         <x-h2-small-text>{{ __('What is private label capsule manufacturing?') }}</x-h2-small-text>
                     </div>
-                    <h3 class="uppercase xl:text-2xl lg:text-2xl md:text-xl sm:text-xl lt:text-xl font-medium my-5 pt-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-dark-green">
+                    <h3 class="uppercase xl:text-2xl lg:text-2xl md:text-xl sm:text-xl lt:text-xl font-medium xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-dark-green mb-5">
                         {{ __('What to expect from a turnkey production service provider?') }}
                     </h3>
                     <div class="w-full sm:text-justify lt:text-justify">
@@ -64,35 +62,45 @@
                         </ul>
                     </div>
                 </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-16 pt-5">
+                <div
+                    class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full xl:p-20 lg:p-5 md:p-2 sm:p-2 lt:p-2 xl:pt-20 lg:pt-20 md:pt-2 sm:pt-2 lt:pt-2">
                     <img src="{{ asset('img/services/services-1.png') }}" alt="services-1">
                 </div>
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3 bg-molecule-one-svg bg-right-15-top bg-no-repeat bg-90%">
-        <div class="w-full flex flex-col items-center">
+    <div
+        class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3 bg-molecule-one-svg bg-right-15-top bg-no-repeat bg-90%  flex flex-col items-center">
+        <div class="flex justify-center">
             <x-h2>Types of Capsules</x-h2>
         </div>
         <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-6">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
                 <x-h3>{{ __('Gelatin capsules') }} </x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>GELATIN CAPSULES are made from collagen, a soft protein that connects the muscles, tendons,
                         skin, and bones of cows.</p><br>
                     <p>This makes them ideal for protecting your formulation while also providing additional health
                         benefits from the amino acids glycine and proline. </p>
                 </div>
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>{{ __('Delayed-release capsules') }}</x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>DELAYED-RELEASE CAPSULES protect sensitive formulations from stomach acids and release them
                         slowly and gently into the small intestines. This can help reduce or eliminate unwanted side
                         effects when taking certain medications or supplements. </p>
                 </div>
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>
                     {{ __('Soft gels') }}
                 </x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>SOFT GELS: If you're looking for a quick and easy way to take your supplements, then soft
                         gels are the way to go. They're coated with beef-based gelatin that makes them easy to
                         digest, so they'll get into your system quickly and start working immediately. Plus, they're
@@ -100,8 +108,11 @@
                 </div>
             </div>
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-6">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>{{ __('Vegetarian capsules') }}</x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>CAPSULES are an excellent choice for those looking for a 100% vegetarian option that works
                         just as well as a gelatin-based capsule. These come in two types:<br>
                         Hypromellose/Hydroxypropyl Methylcellulose (HPMC): The shell is made entirely of water and
@@ -111,10 +122,13 @@
                         starch using the fungus Aerobasidum pullulans. It is similar to the
                         HPMC capsule but 100% natural.</p>
                 </div>
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>
                     {{ __('Hard shells') }}
                 </x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>HARD SHELLS are formed from two shells with the formulation in the middle. They're more
                         durable than soft gels, making them ideal for formulations that need an extended release.
                         Plus, hard shells are less likely to break down in the body, ensuring that your medication
@@ -124,20 +138,29 @@
                 </div>
             </div>
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-6">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>{{ __('Colored capsules') }}</x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>COLORED CAPSULES can help to accentuate and improve the appearance of your supplement
                         formulations. Different colors can also help customers to
                         emotionally connect with your product in a positive way. In addition, colored capsules can
                         also help customers to differentiate between different supplements.</p>
                 </div>
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>{{ __('Branded capsules') }}</x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>BRANDED CAPSULES can help your formulation stand out with your brand beautifully printed on
                         the capsule.</p>
                 </div>
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>{{ __('Liquid & beadlet capsules') }}</x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>LIQUID & BEADLET CAPSULES: Absorption is vital in liquid and beadlet capsules. These capsules
                         come in two forms - hard shells and soft gels - and are designed to be quickly absorbed by
                         the body. This makes them ideal for formulations that need to be rapidly absorbed and
@@ -172,11 +195,11 @@
         </div>
     </div>
     <div class="max-w-7xl mx-auto ">
-        <div class="w-full flex flex-col items-center">
+        <div class="w-11/12 flex flex-col items-center px-5">
             <x-h2>{{ __('Capsule Manufacturing: How Does it Work?') }}</x-h2>
         </div>
         <div class="w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-            <div class="lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full lt:w-full ">
+            <div class="lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6 text-justify">
                 <p>As your dedicated capsule manufacturer, we’ll use state-of-the-art facilities and high capacity
                     automatic and semi-automatic encapsulation machines to produce over 10 million capsules per shift.
                     We understand that getting your product into customers’ hands is critical, so we’ll work with you to
@@ -186,7 +209,7 @@
                     capsules. Our advanced machines ensure high-quality capsules that meet your precise
                     specifications.</p>
             </div>
-            <div class="lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full lt:w-full y">
+            <div class="lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6 text-justify">
                 <p>Our V-Blenders, Double Cone, Double Ribbon, Paddle Blenders, and other top-of-theline blenders make
                     it easy to blend and weigh large capsules quickly and efficiently. No matter the size of your order,
                     we can manufacture and deliver it rapidly.</p><br>
@@ -197,13 +220,17 @@
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto xl:mb-20 lg:mb-20 md:mb-8 sm:mb-3 lt:mb-3 bg-molecule-one-svg bg-no-repeat bg-70% bg-center from-transparent">
+    <div
+        class="max-w-7xl mx-auto xl:mb-20 lg:mb-20 md:mb-8 sm:mb-3 lt:mb-3 bg-molecule-one-svg bg-no-repeat bg-70% bg-center from-transparent">
         <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
             <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-6">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>
                     {{ __('Why You Should Carefully Consider Your Packaging Options for Capsules ') }}
                 </x-h3>
-                <div class="text-justify">
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>The right package is more than just a container for your product. It hints at the future your
                         customers will experience by choosing your formulation. Effective packaging makes a big
                         impact. It catches attention, guides your product to their cart, and leaves them feeling
@@ -226,12 +253,12 @@
                     </ul>
                     <br>
                 </div>
-                <div class="">
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>This way, your customers will always be able to easily find and use the information they
                         need. And, of course, attractive and well-designed packaging can also help your product to
                         stand out on store shelves. </p><br>
                 </div>
-                <div class="">
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>The Quality Assurance Department at PuroVite is committed to ensuring compliance with all
                         regulatory, corporate, and client requirements. QA Associates oversee every aspect of the
                         manufacturing process, from receipt of raw materials through delivery of finished products
@@ -242,10 +269,13 @@
             </div>
 
             <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-6">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+
                 <x-h3>
-                    {{ __('The Superior Difference: Quality, Innovation, And Service You Can Trust') }}
-                </x-h3>
-                <div class="text-justify">
+                        {{ __('The Superior Difference: Quality, Innovation, And Service You Can Trust') }}
+                    </x-h3>
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>CAPSULES are an excellent choice for those looking for a 100% vegetarian option that works
                         just as well as a gelatin-based capsule. These come in two types:<br>
                         Hypromellose/Hydroxypropyl Methylcellulose (HPMC): The shell is made entirely of water and
@@ -267,11 +297,11 @@
                     </ul>
                     <br>
                 </div>
-                <div class="">
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>When you choose PuroVite as your capsule manufacturer, you can be confident that you will
                         receive the highest quality, turnkey capsules ready for market.</p><br>
                 </div>
-                <div class="">
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     <p>The department also manages a comprehensive training program for all company employees that
                         includes
                         orientation and refresher training on job-specific duties and Good Manufacturing Practices.
@@ -286,62 +316,68 @@
     </div>
     <div class="max-w-7xl mx-auto mt-5 xl:mb-5 lg:mb-5 md:mb-8 sm:mb-3 lt:mb-3">
         <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col pt-10">
-            <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-5">
-                <x-h2>
-                    {{ __('Get the Superior Expertise You Need!') }}
-                </x-h2>
-                <div class="w-full">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5 flex flex-col justify-center items-center">
+                <div class="w-11/12">
+                    <x-h2>
+                        {{ __('Get the Superior Expertise You Need!') }}
+                    </x-h2>
+                </div>
+                <div class="w-full p-5 text-justify">
                     <p>Your PuroVite consultant will keep you informed and updated throughout your entire journey.
                         You're not in this alone - we're dedicated to helping your business grow and succeed,
                         offering support every step of the way. Let us help you reach your full potential.</p>
                 </div>
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-10">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full xl:p-10 lg:p-10 md:p-5 sm:p-5 lt:p-5">
                 <img src="{{ asset('img/services/services-7.png') }}" alt="services-7">
             </div>
         </div>
     </div>
     <div class="max-w-7xl mx-auto">
-        <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-            <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5">
-                <div class="p-3">
+        <div
+            class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse lt:flex-col-reverse">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5">
+                <div class="">
                     <img src="{{ asset('img/services/services-8.png') }}" alt="services-8">
                 </div>
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5">
                 <div class="w-full">
                     <x-h2-small-text>
                         {{ __('The benefits of increased productivity through speed and accuracy  ') }}
                     </x-h2-small-text>
                 </div>
-                <div class="text-justify">
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     We turn your vision into reality, creating a final product that will exceed your and your
                     customers’ expectations. We strive for perfection and always aim to deliver exactly what you
                     ordered on time, every time. With our dedication and attention to detail, we guarantee that
                     you will be impressed with the final result.
                 </div>
-
-                <x-h3>
-                    {{ __('Effective labeling') }}
-                </x-h3>
-                <div class="text-justify">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+                    <x-h3>
+                        {{ __('Effective labeling') }}
+                    </x-h3>
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     Your product will comply with FDA guidelines and provide your customers with clear and
                     concise labeling that contains all the information they need. This will help them make
                     informed decisions about your product and ensure its safety.
                 </div>
-                <x-h3>
-                    {{ __('Customizable delivery') }}
-                </x-h3>
-                <div class="text-justify">
+                <div class="xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
+                    <x-h3>
+                        {{ __('Customizable delivery') }}
+                    </x-h3>
+                </div>
+                <div class="text-justify xl:mb-0 lg:mb-0 md:mb-5 sm:mb-5 lt:mb-5">
                     We work with only the best fulfillment partners who share our dedication to great service.
                     With us, you'll never have to worry about your product arriving on time.
                 </div>
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto mt-10 p-6">
-        <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-            <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5">
+    <div class="max-w-7xl mx-auto mt-10">
+        <div class="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5">
                 <x-h2-small-text>
                     {{ __('Create Your Own Unique Capsules and Get Them FAST! ') }}
                 </x-h2-small-text>
@@ -362,7 +398,7 @@
                     level.
                 </div>
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:1/2 sm:w-full lt:w-full p-5 pt-10">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5 pt-10">
                 <img src="{{ asset('img/services/services-9.png') }}" alt="services-9">
             </div>
 

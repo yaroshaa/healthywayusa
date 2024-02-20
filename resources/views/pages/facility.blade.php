@@ -6,36 +6,40 @@
         </x-slogan>
         <x-h1>{{ __('Powder Manufacturer') }}</x-h1>
     </x-top-block>
-    <div class="max-w-7xl mx-auto xl:mb-5 lg:mb-5 md:mb-3 sm:mb-2 lt:mb-2">
-        <div class="flex justify-start xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full xl:p-4 lg:p-4 md:p-4 sm:p-0 lt:p-0">
-                <x-h2-small-text>
-                    {{ __('R&D, Flavoring, Formulation,and More from the Top Powder Manufacturer') }}
-                </x-h2-small-text>
-                <div class="mb-10 text-justify pr-10 ">
-                    <p>Look no further than PuroVite if you need a custom powder manufacturer.
-                        We can handle everything from development and testing to packaging and more for your
-                        powder
-                        manufacturing needs. </p>
+    <div class="max-w-7xl mx-auto xl:mb-5 lg:mb-0 md:mb-3 sm:mb-2 lt:mb-2">
+        <div
+            class="flex justify-start xl:flex-row lg:flex-col-revers md:flex-col-reverse sm:flex-col-reverse lt:flex-col-reverse">
+            <div class="xl:w-1/2 lg:w-full md:w-full sm:w-full lt:w-full xl:p-4 lg:p-4 md:p-4 sm:p-0 lt:p-0">
+                <div class="flex justify-center p-3">
+                    <x-h2-small-text>
+                        {{ __('R&D, Flavoring, Formulation, and More from the Top Powder Manufacturer') }}
+                    </x-h2-small-text>
+                </div>
+                <div class="mb-10 text-justify p-5">
+                    Look no further than PuroVite if you need a custom powder manufacturer.
+                    We can handle everything from development and testing to packaging and more for your
+                    powder manufacturing needs.
                 </div>
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full pt-12 pl-10 text-center">
-                <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-1.png') }}"
+            <div class="xl:w-1/2 lg:w-full md:w-full sm:w-full lt:w-full pt-20 xl:pl-10 lg:pl-2 md:pl-5 p-5 ">
+                <img class="mx-auto" src="{{ asset('img/facility/facility-1.png') }}"
                      alt="facility-1">
             </div>
         </div>
     </div>
     <div class="max-w-7xl mx-auto">
-        <div class="flex justify-start xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full pt-16 pr-10 text-center">
-                <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-2.png') }}"
+        <div class="flex xl:justify-start lg:justify-center xl:flex-row lg:flex-col md:flex-col sm:flex-col lt:flex-col">
+            <div class="xl:w-1/2 lg:w-full md:w-full sm:w-full p-5 pt-20 xl:pr-10 lg:pr-5 md:pr-5 sm:pr-5 lt:pr-5">
+                <img class="mx-auto" src="{{ asset('img/facility/facility-2.png') }}"
                      alt="facility-2">
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full xl:p-4 lg:p-4 md:p-4 sm:p-0 lt:p-0">
-                <x-h2-small-text>
-                    {{ __('Supplement Powder Manufacturing Services ') }}
-                </x-h2-small-text>
-                <div class="text-justify pr-10 ">
+            <div class="xl:w-1/2 lg:w-full md:w-full sm:w-full lt:w-full xl:p-4 lg:p-4 md:p-4 sm:p-0 lt:p-0">
+                <div class="flex justify-center p-3">
+                    <x-h2-small-text>
+                        {{ __('Supplement Powder Manufacturing Services ') }}
+                    </x-h2-small-text>
+                </div>
+                <div class="text-justify p-5">
                     <p>We specialize in manufacturing a variety of different types of protein powders, greens
                         powders,
                         pre,
@@ -97,7 +101,8 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-facility-image-line py-60 bg-no-repeat bg-100% mt-5 mb-10">
+    <div
+        class="w-full bg-facility-image-line py-60 bg-no-repeat bg-cover xl:bg-center lg:bg-center md:bg-left-30-top sm:bg-left-30-top lt:bg-left-40-top mt-5 mb-10">
     </div>
     <div class="max-w-7xl mx-auto mb-20">
         <div class="w-full flex flex-col items-center">
@@ -106,19 +111,19 @@
             </div>
         </div>
 
-        <div class="w-full text-center">
-            <p>When selecting a powder supplement manufacturer, it is important to consider not only the active
+        <div class="w-full text-center p-5">
+            When selecting a powder supplement manufacturer, it is important to consider not only the active
                 ingredients but also any additional ingredients that may be necessary. These can include
                 binders,
                 fillers, and flow agents. Choosing the right manufacturer will ensure that your final product
                 meets
-                all regulatory requirements.</p>
+                all regulatory requirements.
         </div>
     </div>
     <div class="w-full bg-molecule-one-svg bg-no-repeat bg-right-bottom-10 bg-70%">
         <div class="max-w-7xl mx-auto mt-5">
-            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse lt:flex-col-reverse">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-6">
                     <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-xl lt:text-xl font-medium my-8 xl:text-left lg:text-left md:text-left sm:text-center lt:text-center text-dark-green">
                         {{ __('Sweeteners') }}
                     </h3>
@@ -170,17 +175,17 @@
                             comes down to personal preference. </p></div>
 
                 </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-6">
                     <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-3.png') }}"
                          alt="facility-3">
                 </div>
             </div>
-            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+            <div class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-6">
                     <img class="sm:inline-block lt:inline-block" src="{{ asset('img/facility/facility-4.png') }}"
                          alt="facility-4">
                 </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full p-6">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-6">
                     <h3 class="uppercase text-4xl font-medium my-8 pt-5 text-left text-dark-green">
                         {{ __('Colors') }}
                     </h3>
@@ -243,7 +248,7 @@
             </div>
             <div class="flex justify-items-stretch ">
                 <div class="w-full">
-                    <div class="p-3">
+                    <div class="p-3 xl:text-center lg:text-center md:text-justify sm:text-justify lt:text-justify">
                         <p>There are different types of powder mixtures, each with its own benefits and drawbacks.
                             Cohesive mixtures, for example, have additives that ensure even distribution of the
                             ingredients. This makes them ideal for synergistic blending. Ordered mixtures, on the
@@ -264,7 +269,7 @@
         <div
             class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-items-stretch">
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col">
-                <div class="p-4">
+                <div class="p-4 mx-auto">
                     <img src="{{ asset('img/facility/facility-5.png') }}" alt="facility-5">
                 </div>
                 <div>
@@ -286,8 +291,8 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col-reverse">
-                <div class="p-4">
+            <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex xl:flex-col-reverse lg:flex-col-reverse md:flex-col-reverse sm:flex-col lt:flex-col">
+                <div class="p-4 mx-auto">
                     <img src="{{ asset('img/facility/facility-6.png') }}" alt="facility-6">
                 </div>
                 <div>
@@ -322,7 +327,7 @@
                 </div>
             </div>
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full flex flex-col">
-                <div class="p-4">
+                <div class="p-4 mx-auto">
                     <img src="{{ asset('img/facility/facility-7.png') }}" alt="facility-7">
                 </div>
                 <div>
@@ -346,9 +351,11 @@
         <div
             class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col justify-items-stretch pt-5">
             <div class="w-full flex flex-col p-5 items-center">
-                <x-h2>
-                    {{ __('Benefits of Selling Powder Supplements') }}
-                </x-h2>
+                <div class="flex justify-center pb-8 w-11/12 p-3">
+                    <x-h2>
+                        {{ __('Benefits of Selling Powder Supplements') }}
+                    </x-h2>
+                </div>
                 <div class="text-center mt-5">
                     There are many reasons why companies choose powder supplements over other delivery forms,
                     such as pills or capsules. Powder supplements can often contain higher doses than their

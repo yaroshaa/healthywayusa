@@ -1,4 +1,4 @@
-<h2 class="uppercase inline-block lg:text-3xl lt:text-2xl md:text-2xl font-medium text-dark-green xl:my-8 lg:my-8 md:my-5 sm:my-3 lt:my-3 ">
+<h2 class="uppercase inline-block lg:text-3xl lt:text-2xl md:text-2xl font-medium text-dark-green xl:my-8 lg:my-8 md:my-5 sm:my-3 lt:my-3 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center">
     <div class="flex justify-items-stretch items-end relative">
         <div class="wrapper-line-before-hexagon relative h-10 w-full flex flex-col items-end">
             <div class="line-before-hexagon-small h-0 w-2/5 bg-dark-green mt-4 -mb-2 mr-2 z-10 border-l-transparent border-l-4 border-dark-green border-t-10 " >
@@ -30,5 +30,7 @@
             </div>
         </div>
     </div>
-    {{ $slot }}
+    <div class="px-2">
+        {{ $slot }}
+    </div>
 </h2>

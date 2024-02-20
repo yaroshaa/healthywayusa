@@ -7,7 +7,7 @@
         <x-h1>About Us</x-h1>
     </x-top-block>
     <div
-        class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10 bg-about-us-molecule bg-bottom lg:bg-80% xl:bg-80% md:bg-80% sm:bg-1500% lt:bg-150% bg-no-repeat">
+        class="max-w-7xl mx-auto xl:mt-20 lg:mt-20 md:mt-20 sm:mt-10 lt:mt-10 bg-about-us-molecule bg-bottom lg:bg-80% xl:bg-80% md:bg-80% sm:bg-100% lt:bg-200% bg-no-repeat">
         <div class="flex flex-row justify-center">
             <div class="w-3/4 text-center">
                 <x-h2> {{ __('Healthyway Product Offerings: The Best in the Business!') }}  </x-h2>
@@ -15,7 +15,7 @@
         </div>
         <div class="flex flex-col items-center p-0 sm:p-5 lt:p-5">
             <div
-                class="lg:w-4/6 xl:w-4/6 md:w-5/6 sm:w-full lt:w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-row lt:flex-row">
+                class="lg:w-4/6 xl:w-4/6 md:w-5/6 sm:w-full lt:w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-row lt:flex-col">
                 <div class="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full justify-items-center">
                     <div class="p-2">
                         <div class="flex justify-start">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div
-                class="lg:w-4/6 xl:w-4/6 md:w-5/6 sm:w-full lt:w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-row lt:flex-row">
+                class="lg:w-4/6 xl:w-4/6 md:w-5/6 sm:w-full lt:w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-row lt:flex-col">
                 <div class="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full justify-items-center">
                     <div class="p-2">
                         <div class="flex justify-start">
@@ -209,7 +209,7 @@
             </div>
         </div>
 
-        <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
+        <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col xl:justify-around  xl:items-start lg:items-start md:items-center sm:items-center">
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4 text-justify">
                 If you want your health supplements to be successful, you need to partner with a manufacturer who
                 can provide great flavoring. PuroVite has over two decades of experience in dynamic flavor
@@ -218,8 +218,8 @@
                 help you develop a formula that is both nutritious and delicious. When it comes to making your
                 nutritional business thrive, nobody does it better than PuroVite.
             </div>
-            <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4 ">
-                <img src="{{ asset('img/about_us/main-5.png') }}" alt="main-5">
+            <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
+                <img class="mx-auto" src="{{ asset('img/about_us/main-5.png') }}" alt="main-5">
             </div>
             <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full  p-4 text-justify">
                 In conclusion, if you want your health supplements to be successful, you need to partner with a

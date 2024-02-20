@@ -1,5 +1,4 @@
 <h2 class="uppercase inline-block xl:text-5xl lg:text-5xl md:text-4xl sm:text-4xl lt:text-3xl font-medium text-dark-green text-center">
-{{--    xl:my-8 lg:my-8 md:my-0 sm:my-0 lt:my-0--}}
     <div class="flex justify-items-stretch items-end relative">
         <div class="wrapper-line-before-hexagon relative h-12 w-full flex flex-col items-end">
             <div class="line-before-hexagon-small h-0 w-2/5 bg-dark-green mt-4 -mb-2 mr-2 z-10 border-l-transparent border-l-4 border-dark-green border-t-12 " >
@@ -31,5 +30,7 @@
             </div>
         </div>
     </div>
-    {{ $slot }}
+    <div class="pl-3">
+        {{ $slot }}
+    </div>
 </h2>
