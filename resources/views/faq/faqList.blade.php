@@ -11,7 +11,7 @@
                 <div class="p-2 xl:text-gray-600 lg:text-gray-600 md:text-gray-600 sm:text-gray-600 lt:text-gray-600 lg:my-16 sm:my-2 xl:w-3/4 lg:w-3/4 md:w-full sm:w-full lt:w-full sm:text-xs md:text-2xl">
                     @if(Auth::user())
                         <div x-data="{ expanded: false }">
-                            <button @click="expanded = ! expanded">
+                            <button class="" @click="expanded = ! expanded">
                                 {{ __('Add Question') }}
                             </button>
                             <div x-show="expanded" x-collapse>
@@ -124,7 +124,7 @@
                     </div>
                 @endforeach
             @else
-                <div class="flex justify-start pt-5 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
+                <div class="flex justify-start pt-5 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col ">
                     <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
                         <h3 class="xl:text-4xl lg:text-4xl md:text-2xl sm:text-2xl lt:text-2xl font-medium mb-8 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-dark-green">
                             {{ __('No information for display!') }}

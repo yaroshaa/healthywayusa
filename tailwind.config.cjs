@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    plugins: [require('@tailwindcss/forms')],
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
@@ -111,12 +112,8 @@ module.exports = {
                 '14': '14px',
                 '16': '16px',
             },
-
         },
-
     },
-
-    plugins: [require('@tailwindcss/forms')],
 };
 
 

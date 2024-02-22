@@ -25,7 +25,84 @@ class BlogContentSeeder extends Seeder
             'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
             'meta_keys' => 'test,keys,test keys' ,
             'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
-            'image' => 'blog/private_label_capsule_8.png'
+            'image' => 'private_label_capsule_8.png'
         ]);
+        BlogContent::create([
+            'id' => 2,
+            'language_id' => 1,
+            'blog_id' => 2,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 3,
+            'language_id' => 1,
+            'blog_id' => 3,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 4,
+            'language_id' => 1,
+            'blog_id' => 4,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 5,
+            'language_id' => 1,
+            'blog_id' => 5,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 6,
+            'language_id' => 1,
+            'blog_id' => 6,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 7,
+            'language_id' => 1,
+            'blog_id' => 7,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
+        BlogContent::create([
+            'id' => 8,
+            'language_id' => 1,
+            'blog_id' => 8,
+            'name' => 'Test name post',
+            'content' => '"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."',
+            'meta_keys' => 'test,keys,test keys' ,
+            'meta_description' => 'On the other hand, we denounce with righteous indignation and dislike men',
+            'image' => 'private_label_capsule_8.png'
+        ]);
+
     }
 }

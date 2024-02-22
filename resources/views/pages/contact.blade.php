@@ -6,8 +6,8 @@
         <x-h1>{{ __('Contact') }}</x-h1>
     </x-top-block>
     <div class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3">
-        <div class="flex justify-start pt-14 ">
-            <div class="xl:w-2/4 lg:w-2/4 md:w-2/4 sm:w-full lt:w-full p-4">
+        <div class="flex justify-center pt-14 ">
+            <div class="xl:w-2/4 lg:w-2/4 md:w-full sm:w-full lt:w-full p-4">
                 <form method="POST" action="{{ route('contactsSend') }}">
                     @csrf
                     <div class="mt-4">
@@ -17,6 +17,18 @@
                         <x-input-error :messages="$errors->get('name')" class="mt-2"/>
                     </div>
                     <div class="mt-4">
+                        <x-input-label for="company" :value="__('Company')"/>
+                        <x-text-input id="company" class="block mt-1 w-full" type="text" name="company" :value="old('company')"
+                                      required/>
+                        <x-input-error :messages="$errors->get('company')" class="mt-2"/>
+                    </div>
+                    <div class="mt-4">
+                        <x-input-label for="phone" :value="__('Phone')"/>
+                        <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')"
+                                      required/>
+                        <x-input-error :messages="$errors->get('phone')" class="mt-2"/>
+                    </div>
+                    <div class="mt-4">
                         <x-input-label for="email" :value="__('Email')"/>
                         <x-text-input id="email" class="block mt-1 w-full" type="email" name="email"
                                       :value="old('email')" required/>
@@ -24,7 +36,7 @@
                     </div>
                     <div class="mt-4">
                         <x-input-label for="message" :value="__('Message')"/>
-                        <x-text-area id="message" class="block mt-1 w-full" type="text" name="message"
+                        <x-text-area id="message" class="block mt-1 w-full" rows="4" type="text" name="message"
                                      :value="old('message')" required></x-text-area>
                         <x-input-error :messages="$errors->get('message')" class="mt-2"/>
                     </div>

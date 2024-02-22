@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div
-                    class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full xl:p-20 lg:p-5 md:p-2 sm:p-2 lt:p-2 xl:pt-20 lg:pt-20 md:pt-2 sm:pt-2 lt:pt-2">
+                    class="xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full lt:w-full xl:p-20 lg:p-5 md:p-5 sm:p-10 lt:p-5 xl:pt-20 lg:pt-20 md:pt-28 sm:pt-10 lt:pt-5">
                     <img src="{{ asset('img/services/services-1.png') }}" alt="services-1">
                 </div>
             </div>
@@ -179,7 +179,7 @@
                     <img src="{{ asset('img/services/services-3.png') }}" alt="services-3">
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col xl:flex lg:flex md:flex sm:hidden lt:hidden">
                 <div class="p-2">
                     <img src="{{ asset('img/services/services-4.png') }}" alt="services-4">
                 </div>
@@ -336,7 +336,7 @@
     <div class="max-w-7xl mx-auto">
         <div
             class="flex justify-items-stretch xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse lt:flex-col-reverse">
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5 xl:pt-10 lg:pt-32 md:pt-5 sm:pt-5 lt:pt-10">
                 <div class="">
                     <img src="{{ asset('img/services/services-8.png') }}" alt="services-8">
                 </div>
@@ -375,7 +375,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto mt-10">
+    <div class="max-w-7xl mx-auto my-10">
         <div class="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col lt:flex-col">
             <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5">
                 <x-h2-small-text>
@@ -398,10 +398,9 @@
                     level.
                 </div>
             </div>
-            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5 pt-10">
+            <div class="xl:w-1/2 lg:w-1/2 md:w-full sm:w-full lt:w-full p-5 xl:pt-10 lg:pt-32 md:pt-10 sm:pt-10 lt:pt-10">
                 <img src="{{ asset('img/services/services-9.png') }}" alt="services-9">
             </div>
-
         </div>
     </div>
 </x-app-layout>

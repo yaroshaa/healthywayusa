@@ -29,9 +29,10 @@ class BlogController extends Controller
      */
     public function index($key = null)
     {
-        $data = $this->blogRepository->getPosts($this->service->getLanguageId($key));
+        $blog = $this->blogRepository->getPosts($this->service->getLanguageId($key));
+//        dd(count($blog));
         return view('blog.blogList')
-            ->with(['data' => $data->toArray()]);
+            ->with(['blog' => $blog]);
     }
 
     /**
@@ -131,10 +132,10 @@ class BlogController extends Controller
         $updateContent = $this->blogRepository->updatePost($request,$id);
 
         if (!$updateContent) {
-            return view()->with(['error' => 'Тew post not added']);
+            return view()->with(['error' => 'New post not added']);
         } else {
             if ($request->isMethod('post') && $request->image) {
-                Image::make($request->file('image'))->save(public_path() . '/img/blog/'.$request->file('image')->getClientOriginalName());
+                Image::make($request->file('image'))->save(public_path(  '/img/blog/'.$request->file('image')->getClientOriginalName()));
             }
         }
 

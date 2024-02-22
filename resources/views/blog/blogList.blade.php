@@ -6,24 +6,26 @@
         <x-h1>{{ __('Blog List') }}</x-h1>
     </x-top-block>
     <div class="max-w-7xl mx-auto">
-        <div class="w-4/5 text-black-800">
-            @if(Auth::user() && Auth::user()->hasRole('admin') && count($data['data']) > 0)
-                <a class="pl-3 inline-block hover:text-gray-700" href="{{ route('postcreate', ['key' => null]) }}">
-                    {{ __('Add post') }}
-                </a>
+        <div class="w-4/5  py-10">
+            @if(Auth::user() && Auth::user()->hasRole('admin') && count($blog) > 0)
+
+                    <a class="p-2 border-2 border-gray-400 hover:border-gray-700 rounded text-gray-400 hover:text-gray-700" href="{{ route('postcreate', ['key' => null]) }}">
+                        {{ __('Add post') }}
+                    </a>
             @endif
         </div>
     </div>
     <div class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3">
-        @if(count($data['data']) > 0 )
+        @if(count($blog) > 0 )
+{{--        @if($data->size > 0 )--}}
             @php($counter = 1)
-            @foreach($data['data'] as $post)
+            @foreach($blog as $post)
                 @php($counter++)
                 @if(Auth::user() && Auth::user()->hasRole('admin'))
                     <div
                         class="flex justify-start xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
                         <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
-                            <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="">
+                            <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="{{ $post['content'][0]['image'].'_'.$post['id'] }}">
                         </div>
                         <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
                             <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-2xl lt:text-2xl font-medium mb-8 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-cyan-800">
@@ -111,5 +113,8 @@
             </div>
         @endif
 
+    </div>
+    <div class="max-w-7xl mx-auto p-5">
+        {{ $blog->links('layouts.pagination') }}
     </div>
 </x-app-layout>

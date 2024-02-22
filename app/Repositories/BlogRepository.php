@@ -4,7 +4,6 @@ namespace App\Repositories;
 use App\Models\Blog;
 use App\Models\BlogContent;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
 
 class BlogRepository implements Interfaces\BlogRepositoryInterface
 {
@@ -15,7 +14,7 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
     {
         return Blog::with(['content' => function ($query) use ($languageId) {
             $query->where('language_id' , $languageId);
-        }])->orderBy('created_at', 'DESC')->paginate(25);
+        }])->orderBy('created_at', 'DESC')->paginate(5);
     }
 
 
@@ -36,7 +35,10 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
     public function storePost(Request $request): bool
     {
         $post = Blog::create();
-        $image = $request->hasFile('image') ? $request->file('image')->getClientOriginalName() : null;
+        $imageName = $request->hasFile('image') ? $request->file('image')->getClientOriginalName() : null;
+
+        $img = Image::make($request->file('image'));
+        $img->save('public/img/blog/'.$imageName);
         $blogContent = BlogContent::create([
             'blog_id' => $post->id,
             'language_id' => $request->input('language_id'),
@@ -44,7 +46,7 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
             'content' => $request->input('content'),
             'meta_keys' => $request->input('meta_keys'),
             'meta_description' => $request->input('meta_description'),
-            'image' => $image,
+            'image' => $imageName,
             'status' => true
         ]);
 
@@ -53,6 +55,11 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
 
     public function updatePost(Request $request, $id): string
     {
+
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,jpg,png|max:2048',
+        ]);
+
         $blogId = $request->input('blog_id');
         Blog::find($blogId)->update([
             'status' => (boolean)$request->input('status')
@@ -67,8 +74,9 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
         ]);
 
         if($request->hasFile('image')) {
+            $imageName = $request->hasFile('image') ? $request->file('image')->getClientOriginalName() : null;
             BlogContent::find($id)->update([
-                'image' => $request->file('image')->getClientOriginalName()
+                'image' => $imageName
             ]);
         }
 
