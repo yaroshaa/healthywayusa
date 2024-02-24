@@ -9,15 +9,16 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property int $id
  * @property string|null $name
- * @property string|null $nicename
+ * @property string|null $key
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @mixin \Eloquent
  */
 class Role extends Model
 {
+    protected $table = 'roles';
     protected $fillable = [
         'name',
-        'nicename'
+        'key'
     ];
 }

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class RolesTableSeeder extends Seeder
+class RolesIndexTableSeeder extends Seeder
 {
     /**
      * Seed the application's database.
@@ -16,20 +16,16 @@ class RolesTableSeeder extends Seeder
     {
         DB::table('roles')->insert([
             'id' => 1,
-            'name' => 'Admin',
-            'key' => 'admin'
+            'user_id' => 1,
+            'role_id' => 1
         ]);
 
         DB::table('roles')->insert([
             'id' => 2,
-            'name' => 'User',
-            'key' => 'user'
+            'user_id' => 2,
+            'role_id' => 3
         ]);
 
-        DB::table('roles')->insert([
-            'id' => 3,
-            'name' => 'Seo',
-            'key' => 'seo'
-        ]);
+
     }
 }

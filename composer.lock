@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b3d9022975482779e6f324cc1004250",
+    "content-hash": "19fc75240a23c097f7705eef2fb9968c",
     "packages": [
         {
             "name": "brick/math",
@@ -1168,6 +1168,53 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "helori/laravel-seo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helori/laravel-seo.git",
+                "reference": "4907b0459663c2143054391116a7f488785d223b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helori/laravel-seo/zipball/4907b0459663c2143054391116a7f488785d223b",
+                "reference": "4907b0459663c2143054391116a7f488785d223b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Helori\\LaravelSeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Helori Lanos",
+                    "email": "helori@algoart.fr",
+                    "homepage": "https://algoart.fr"
+                }
+            ],
+            "description": "SEO tools to insert meta and structured-data in laravel projects",
+            "keywords": [
+                "laravel",
+                "seo",
+                "structured data"
+            ],
+            "support": {
+                "issues": "https://github.com/helori/laravel-seo/issues",
+                "source": "https://github.com/helori/laravel-seo/tree/master"
+            },
+            "time": "2017-05-18T07:19:28+00:00"
         },
         {
             "name": "intervention/image",
@@ -8353,7 +8400,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "helori/laravel-seo": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

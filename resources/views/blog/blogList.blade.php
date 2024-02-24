@@ -6,7 +6,7 @@
         <x-h1>{{ __('Blog List') }}</x-h1>
     </x-top-block>
     <div class="max-w-7xl mx-auto">
-        <div class="w-4/5  py-10">
+        <div class="w-4/5 py-10 pl-4">
             @if(Auth::user() && Auth::user()->hasRole('admin') && count($blog) > 0)
 
                     <a class="p-2 border-2 border-gray-400 hover:border-gray-700 rounded text-gray-400 hover:text-gray-700" href="{{ route('postcreate', ['key' => null]) }}">
@@ -23,7 +23,7 @@
                 @php($counter++)
                 @if(Auth::user() && Auth::user()->hasRole('admin'))
                     <div
-                        class="flex justify-start xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 border-gray-200">
+                        class="flex justify-start xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 last:border-b-0 border-gray-200">
                         <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
                             <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="{{ $post['content'][0]['image'].'_'.$post['id'] }}">
                         </div>

@@ -22,5 +22,17 @@ class LanguagesSeeder extends Seeder
             'name' => 'English',
             'code' => 'EN'
         ]);
+        Language::create([
+            'key' => 'ua',
+            'name' => 'Українська',
+            'code' => 'UA'
+        ]);
+        Language::create([
+            'key' => 'ru',
+            'name' => 'Русский',
+            'code' => 'RU'
+        ]);
+
+
     }
 }

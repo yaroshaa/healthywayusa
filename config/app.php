@@ -161,6 +161,7 @@ return [
          */
         Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Helori\LaravelSeo\SeoServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -186,7 +187,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Seo' => Helori\LaravelSeo\Facades\Seo::class,
     ])->toArray(),
 
 ];

@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->call(LanguagesSeeder::class);
         $this->call(BlogSeeder::class);
         $this->call(BlogContentSeeder::class);
+        $this->call(PageSeeder::class);
+        $this->call(PageContentSeeder::class);
         $this->call(RolesTableSeeder::class);
         $this->call(SettingsSeeder::class);
     }

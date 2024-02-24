@@ -250,22 +250,35 @@
                         {{ __('FAQ') }}
                     </x-responsive-nav-link>
                 </div>
+                @if (Auth::user())
+                    <!-- Responsive Settings Options -->
+                    <div class="pt-4 pb-1 border-t border-gray-200 bg-white">
+                        <div class="mt-3 space-y-1">
+                            <!-- Authentication -->
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
 
-                <!-- Responsive Settings Options -->
-                <div class="pt-4 pb-1 border-t border-gray-200">
-                    <div class="mt-3 space-y-1">
-                        <!-- Authentication -->
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-
-                            <x-responsive-nav-link :href="route('logout')"
-                                                   onclick="event.preventDefault();
+                                <x-responsive-nav-link :href="route('logout')"
+                                                       onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
-                            </x-responsive-nav-link>
-                        </form>
+                                    {{ __('Log Out') }}
+                                </x-responsive-nav-link>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                @else
+                    <div class="pt-4 pb-1 border-t border-gray-200 bg-white">
+                        <div class="mt-3 space-y-1">
+                            <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                                {{ __('Login') }}
+                            </x-responsive-nav-link>
+                            <x-responsive-nav-link :href="route('register')" :active="request()->routeIs('register')">
+                                {{ __('Register') }}
+                            </x-responsive-nav-link>
+                        </div>
+                    </div>
+                @endif
+
             </div>
         </nav>
     </div>

@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pages_meta', function (Blueprint $table) {
-            $table->id();
+        Schema::create('page', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('key')->unique();
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
     }
@@ -22,6 +24,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pages_meta');
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('page');
+        Schema::enableForeignKeyConstraints();
     }
 };
