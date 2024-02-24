@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('language_id');
             $table->unsignedBigInteger('page_id');
             $table->string('name')->nullable();
-            $table->string('meta_title')->nullable();
+            $table->string('meta_name')->nullable();
             $table->string('meta_description')->nullable();
             $table->string('meta_keys')->nullable();
             $table->timestamps();

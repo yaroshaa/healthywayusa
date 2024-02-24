@@ -12,7 +12,6 @@ use Illuminate\Http\Response;
 
 class SettingsController extends Controller
 {
-
     private const ID = 1;
 
     /**
@@ -22,7 +21,7 @@ class SettingsController extends Controller
      */
     public function index()
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->isAdmin()) {
                 $settings = Settings::find($this::ID);
                 $users =  User::all();
                 $emails =  Email::all();

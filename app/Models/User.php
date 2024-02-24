@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -22,7 +24,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'role',
+        'role_id',
         'email',
         'password',
     ];
@@ -35,7 +37,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
-        'role',
+        'role_id',
     ];
 
     /**
@@ -47,16 +49,26 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-
-
+//    protected $with = [
+//        'role',
+//    ];
 
     /**
-     * @param $role
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+
+    public function role(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    /**
      * @return bool
      */
 
-    public function hasRole($role): bool
+    public function isAdmin(): bool
     {
-        return $this->role === $role;
+        return $this->role->key === $this::ADMIN;
     }
+
 }

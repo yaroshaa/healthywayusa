@@ -162,6 +162,7 @@ return [
         Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Helori\LaravelSeo\SeoServiceProvider::class,
+        Laravel\Scout\ScoutServiceProvider::class,
 
         /*
          * Application Service Providers...

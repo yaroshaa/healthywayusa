@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('blog_id');
             $table->string('name')->nullable();
             $table->text('content')->nullable();
+            $table->string('meta_name')->nullable();
             $table->string('meta_keys')->nullable();
             $table->string('meta_description')->nullable();
             $table->string('image')->nullable();

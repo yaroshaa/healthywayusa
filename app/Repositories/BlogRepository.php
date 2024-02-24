@@ -17,6 +17,16 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
         }])->orderBy('created_at', 'DESC')->paginate(5);
     }
 
+    /**
+     * @param int $languageId
+     */
+    public function search($search): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    {
+
+        return Blog::with(['content' => function ($query) use ($search) {
+            $query->where('language_id' , $search);
+        }])->orderBy('created_at', 'DESC')->paginate(5);
+    }
 
     /**
      * @param int $id

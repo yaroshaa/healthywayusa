@@ -12,8 +12,11 @@ class SearchController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        dd($request->search);
+
+
         return view('search/searchList')->with([
             'title' => 'Search'
         ]);

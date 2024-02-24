@@ -22,7 +22,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 1,
             'name' => 'Home',
-            'meta_title' => 'Home' ,
+            'meta_name' => 'Home' ,
             'meta_keys' => 'Home' ,
             'meta_description' => 'Home',
 
@@ -32,7 +32,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 2,
             'name' => 'About Us',
-            'meta_title' => 'About Us',
+            'meta_name' => 'About Us',
             'meta_keys' => 'About Us',
             'meta_description' => 'About Us',
 
@@ -43,7 +43,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 3,
             'name' => 'Manufacturing',
-            'meta_title' => 'Manufacturing',
+            'meta_name' => 'Manufacturing',
             'meta_keys' => 'Manufacturing',
             'meta_description' => 'Manufacturing',
         ]);
@@ -53,7 +53,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 4,
             'name' => 'Facility',
-            'meta_title' => 'Facility',
+            'meta_name' => 'Facility',
             'meta_keys' => 'Facility',
             'meta_description' => 'Facility',
         ]);
@@ -63,7 +63,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 5,
             'name' => 'Quality',
-            'meta_title' => 'Quality',
+            'meta_name' => 'Quality',
             'meta_keys' => 'Quality',
             'meta_description' => 'Quality',
         ]);
@@ -73,7 +73,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 6,
             'name' => 'Certificates',
-            'meta_title' => 'Certificates',
+            'meta_name' => 'Certificates',
             'meta_keys' => 'Certificates',
             'meta_description' => 'Certificates',
         ]);
@@ -83,7 +83,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 7,
             'name' => 'Services',
-            'meta_title' => 'Services',
+            'meta_name' => 'Services',
             'meta_keys' => 'Services',
             'meta_description' => 'Services',
         ]);
@@ -93,7 +93,7 @@ class PageContentSeeder extends Seeder
             'language_id' => 1,
             'page_id' => 8,
             'name' => 'Contacts',
-            'meta_title' => 'Contacts',
+            'meta_name' => 'Contacts',
             'meta_keys' => 'Contacts',
             'meta_description' => 'Contacts',
         ]);
