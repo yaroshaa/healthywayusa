@@ -3,6 +3,7 @@ namespace App\Repositories;
 
 use App\Models\Blog;
 use App\Models\BlogContent;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\Request;
 
 class BlogRepository implements Interfaces\BlogRepositoryInterface
@@ -18,14 +19,12 @@ class BlogRepository implements Interfaces\BlogRepositoryInterface
     }
 
     /**
-     * @param int $languageId
+     * @param string $query
+     * @return LengthAwarePaginator
      */
-    public function search($search): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    public function getSearch(string $query): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-
-        return Blog::with(['content' => function ($query) use ($search) {
-            $query->where('language_id' , $search);
-        }])->orderBy('created_at', 'DESC')->paginate(5);
+        return Blog::search($query)->paginate(5);
     }
 
     /**

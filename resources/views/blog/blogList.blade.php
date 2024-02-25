@@ -8,16 +8,16 @@
     <div class="max-w-7xl mx-auto">
         <div class="w-4/5 py-10 pl-4">
             @if(Auth::user() && Auth::user()->isAdmin() && count($blog) > 0)
-
-                    <a class="p-2 border-2 border-gray-400 hover:border-gray-700 rounded text-gray-400 hover:text-gray-700" href="{{ route('postcreate', ['key' => null]) }}">
-                        {{ __('Add post') }}
-                    </a>
+                <a class="p-2 border-2 border-gray-400 hover:border-gray-700 rounded text-gray-400 hover:text-gray-700"
+                   href="{{ route('postcreate', ['key' => null]) }}">
+                    {{ __('Add post') }}
+                </a>
             @endif
         </div>
     </div>
     <div class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3">
-
-            @if(count($blog) > 0 )
+        {{ Breadcrumbs::render('blog') }}
+        @if(count($blog) > 0 )
             @php($counter = 1)
             @foreach($blog as $post)
                 @php($counter++)
@@ -25,7 +25,8 @@
                     <div
                         class="flex justify-start xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col border-b-2 last:border-b-0 border-gray-200">
                         <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
-                            <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="{{ $post['content'][0]['image'].'_'.$post['id'] }}">
+                            <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}"
+                                 alt="{{ $post['content'][0]['image'].'_'.$post['id'] }}">
                         </div>
                         <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
                             <h3 class="uppercase xl:text-4xl lg:text-4xl md:text-2xl sm:text-2xl lt:text-2xl font-medium mb-8 xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-cyan-800">
@@ -73,6 +74,7 @@
                     </div>
                 @elseif($post['status'])
                     <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col ">
+
                         <div class="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-full lt:w-full p-4">
                             <img src="{{ asset('img/blog/'.$post['content'][0]['image']) }}" alt="">
                         </div>
@@ -92,7 +94,6 @@
                     </div>
                 @endif
             @endforeach
-
         @else
             <div class="flex justify-start pt-14 xl:flex-row lg:flex-row md:flex-row sm:flex-col lt:flex-col">
                 <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">

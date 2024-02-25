@@ -88,7 +88,7 @@ class BlogController extends Controller
         }
 
         return view('blog.post')
-            ->with(['data' => $post]);
+            ->with(['post' => $post]);
     }
 
     /**
