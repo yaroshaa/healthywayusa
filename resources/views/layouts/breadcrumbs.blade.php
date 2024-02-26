@@ -1,13 +1,27 @@
 @unless ($breadcrumbs->isEmpty())
-    <ol class="breadcrumb">
-        @foreach ($breadcrumbs as $breadcrumb)
+    <nav class="container mx-auto">
+        <ol class="p-4 rounded flex flex-wrap bg-transparent text-sm text-gray-800">
+            @foreach ($breadcrumbs as $breadcrumb)
 
-            @if (!is_null($breadcrumb->url) && !$loop->last)
-                <li class="breadcrumb-item"><a href="{{ $breadcrumb->url }}">{{ $breadcrumb->title }}</a></li>
-            @else
-                <li class="breadcrumb-item active">{{ $breadcrumb->title }}</li>
-            @endif
+                @if ($breadcrumb->url && !$loop->last)
+                    <li>
+                        <a href="{{ $breadcrumb->url }}" class="text-dark-green hover:text-light-green hover:underline focus:text-light-green focus:underline">
+                            {{ $breadcrumb->title }}
+                        </a>
+                    </li>
+                @else
+                    <li>
+                        {{ $breadcrumb->title }}
+                    </li>
+                @endif
 
-        @endforeach
-    </ol>
+                @unless($loop->last)
+                    <li class="text-gray-500 px-2">
+                        /
+                    </li>
+                @endif
+
+            @endforeach
+        </ol>
+    </nav>
 @endunless

@@ -60,7 +60,7 @@
                                     <p class="p-3" >{{ $faq['answer'] }}</p>
                                 </div>
                             </div>
-                        @elseif(Auth::user() && Auth::user()->hasRole('admin'))
+                        @elseif(Auth::user() && Auth::user()->isAdmin())
                             <div x-data="{ expanded: false }" class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
                                 <div @click="expanded = ! expanded"  class="text-justify xl:pr-10 lg:pr-10 md:pr-0 sm:pr-0 lt:pr-0">
                                     <p class="p-3">{{ $faq['question'] }}</p>

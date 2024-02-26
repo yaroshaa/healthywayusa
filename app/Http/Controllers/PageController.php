@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Language;
 use App\Models\Page;
+use Helori\LaravelSeo\Seo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
@@ -27,6 +28,13 @@ class PageController extends Controller
      */
     public function index(Request $request)
     {
+//        Seo::set('title', 'My home page title');
+//        Seo::set('description', "My home page description");
+//        Seo::set('keywords', "my,home,page,keywords");
+//        Seo::set('breadcrumblist', [
+//            ['title' => 'Page short title', 'url' => 'page_url'],
+//            ['title' => 'Sub-Page short title', 'url' => 'sub_page_url'],
+//        ]);
         $lang_id = isset($lang_key)
             ? Language::where('key', $lang_key)->first()->id
             : $this->default_lang_id;

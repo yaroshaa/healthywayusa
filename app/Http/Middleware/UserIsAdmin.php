@@ -4,19 +4,18 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class UserHasRole
+class UserIsAdmin
 {
     /**
      * Handle an incoming request.
      *
      * @param \Illuminate\Http\Request $request
      * @param \Closure $next
-     * @param $role
      * @return mixed
      */
-    public function handle($request, Closure $next, $role)
+    public function handle($request, Closure $next)
     {
-        if (\Auth::check() && \Auth::user()->hasRole($role)) {
+        if (\Auth::check() && \Auth::user()->isAdmin()) {
             return $next($request);
         }
 

@@ -1,12 +1,5 @@
 <?php
 
-use App\Http\Controllers\Blog\BlogListController;
-use App\Http\Controllers\Blog\PostCreateController;
-use App\Http\Controllers\Blog\PostDeleteActionController;
-use App\Http\Controllers\Blog\PostEditController;
-use App\Http\Controllers\Blog\PostStoreActionController;
-use App\Http\Controllers\Blog\PostShowController;
-use App\Http\Controllers\Blog\PostUpdateActionController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingsController;
@@ -14,9 +7,9 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\SearchController;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,6 +43,8 @@ Route::post('/contacts', [ContactController::class, 'send'])->name('contactsSend
 
 // Search
 Route::post('/search', [SearchController::class, 'index'])->name('search');
+Route::get('/search', [SearchController::class, 'index'])->name('search');
+Route::get('/search/{id}', [SearchController::class, 'showItem'])->name('showItem');
 
 Route::prefix('faq')->group(function () {
     Route::get('/', [FaqController::class, 'index'])->name('faq');
@@ -60,7 +55,7 @@ Route::prefix('faq')->group(function () {
 });
 
 // Settings
-Route::prefix('settings')->group(function () {
+Route::prefix('settings')->middleware(['auth','isAdmin'])->group(function () {
     Route::get('/', [SettingsController::class, 'index'])->name('settings');
     Route::post('/store', [SettingsController::class, 'store'])->name('settingsstore');
     Route::get('/{id}/edit', [SettingsController::class, 'edit'])->name('settingsedit');
@@ -74,16 +69,29 @@ Route::prefix('settings')->group(function () {
 });
 
 // Blog
+
 Route::prefix('blog')->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
-    Route::get('/add', [BlogController::class, 'create'])->name('postcreate');
+    Route::get('/add', [BlogController::class, 'create'])->name('postcreate')->middleware(['auth','isAdmin']);
     Route::get('/{id}', [BlogController::class, 'show'])->name('postshow');
-    Route::post('/store', [BlogController::class, 'store'])->name('poststore');
-    Route::get('/{id}/edit', [BlogController::class, 'edit'])->name('postedit');
-    Route::post('/{id}/update', [BlogController::class, 'update'])->name('postupdate');
-    Route::post('/{id}/delete', [BlogController::class, 'delete'])->name('postdelete');
+    Route::post('/store', [BlogController::class, 'store'])->name('poststore')->middleware(['auth','isAdmin']);
+    Route::get('/{id}/edit', [BlogController::class, 'edit'])->name('postedit')->middleware(['auth','isAdmin']);
+    Route::post('/{id}/update', [BlogController::class, 'update'])->name('postupdate')->middleware(['auth','isAdmin']);
+    Route::post('/{id}/delete', [BlogController::class, 'delete'])->name('postdelete')->middleware(['auth','isAdmin']);
 });
 
+
+
+
+Route::get('/auth/redirect', function () {
+    return Socialite::driver('google')->redirect();
+});
+
+Route::get('/auth/callback', function () {
+    $user = Socialite::driver('google')->user();
+
+    // $user->token
+});
 
 
 require __DIR__.'/auth.php';

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
 use App\Models\User;
 use Auth;
 use Illuminate\Contracts\Foundation\Application;
@@ -15,6 +16,16 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    private const DEFAULT_NAME = 'Default Name';
+    private const USER_KEY = 'user';
+    private int $default_role_id;
+    private $roles;
+
+    public function __construct(Role $role)
+    {
+        $this->roles = Role::all();
+        $this->default_role_id = $role->where('key', $this::USER_KEY )->value('id');
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -23,10 +34,10 @@ class UserController extends Controller
      */
     public function create()
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
-            return view('settings.createUser');
+        if(Auth::user() && Auth::user()->isAdmin()) {
+            return view('settings.createUser', ['roles' => $this->roles]);
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
 
     }
@@ -39,7 +50,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->isAdmin()) {
             $request->validate([
                 'name' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
@@ -49,12 +60,13 @@ class UserController extends Controller
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
+                'role_id' => $this->default_role_id,
                 'password' => Hash::make($request->password),
             ]);
 
             return redirect('settings');
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
     }
 
@@ -64,11 +76,11 @@ class UserController extends Controller
      */
     public function edit(int $id)
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->isAdmin()) {
             $user = User::find($id);
-            return view('settings.editUser')->with(['user' => $user]);
+            return view('settings.editUser')->with(['user' => $user, 'roles' => $this->roles]);
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
     }
 
@@ -81,15 +93,16 @@ class UserController extends Controller
      */
     public function update(Request $request, int $id)
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+//        dd($this->default_role_id);
+        if(Auth::user() && Auth::user()->isAdmin()) {
             $request->validate([
                 'name' => ['required', 'string', 'max:255'],
                 'password' => ['nullable','string', Rules\Password::defaults()],
             ]);
 
             User::find($id)->update([
-                'name' => $request->input('name'),
-                'role' => $request->input('role'),
+                'name' => $request->has('name') ? $request->input('name') : $this::DEFAULT_NAME,
+                'role_id' => $request->has('role_id') ? $request->input('role_id') : $this->default_role_id,
             ]);
 
             if($request->input('password') != null){
@@ -99,7 +112,7 @@ class UserController extends Controller
             }
             return redirect()->back();
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
     }
 
@@ -111,7 +124,7 @@ class UserController extends Controller
      */
     public function delete(int $id)
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->isAdmin()) {
             User::find($id)->delete();
             return redirect()->back();
         }else{

@@ -8,6 +8,7 @@ use App\Models\Settings;
 use App\Models\User;
 use App\Repositories\FaqRepository;
 use Auth;
+use Helori\LaravelSeo\Seo;
 use Illuminate\Http\Request;
 
 class FaqController extends Controller
@@ -25,7 +26,14 @@ class FaqController extends Controller
      */
     public function index()
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+//        Seo::set('title', 'My home page title');
+//        Seo::set('description', "My home page description");
+//        Seo::set('keywords', "my,home,page,keywords");
+//        Seo::set('breadcrumblist', [
+//            ['title' => 'Page short title', 'url' => 'page_url'],
+//            ['title' => 'Sub-Page short title', 'url' => 'sub_page_url'],
+//        ]);
+        if(Auth::user() && Auth::user()->isAdmin()) {
             $data = $this->faqRepository->getQuestionsForAdmin();
         } else {
             $data = $this->faqRepository->getQuestions();

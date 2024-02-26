@@ -6,6 +6,7 @@ use App\Http\Resources\Blog\BlogContentResource;
 use App\Models\Language;
 use App\Repositories\Interfaces\BlogRepositoryInterface;
 use App\Services\LocaleService;
+use Helori\LaravelSeo\Seo;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -29,6 +30,13 @@ class BlogController extends Controller
      */
     public function index($key = null)
     {
+//        Seo::set('title', 'My home page title');
+//        Seo::set('description', "My home page description");
+//        Seo::set('keywords', "my,home,page,keywords");
+//        Seo::set('breadcrumblist', [
+//            ['title' => 'Page short title', 'url' => 'page_url'],
+//            ['title' => 'Sub-Page short title', 'url' => 'sub_page_url'],
+//        ]);
         $blog = $this->blogRepository->getPosts($this->service->getLanguageId($key));
 //        dd(count($blog));
         return view('blog.blogList')
@@ -78,17 +86,31 @@ class BlogController extends Controller
      *
      * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function show($id, $key = null)
+    public function show($id)
     {
+//        Seo::set('title', 'My home page title');
+//        Seo::set('description', "My home page description");
+//        Seo::set('keywords', "my,home,page,keywords");
+//        Seo::set('breadcrumblist', [
+//            ['title' => 'Page short title', 'url' => 'page_url'],
+//            ['title' => 'Sub-Page short title', 'url' => 'sub_page_url'],
+//        ]);
+        $key = null;
         $repository = $this->blogRepository->getPost((int)$id, $this->service->getLanguageId($key));
+
         $blogContentResource = new BlogContentResource();
         $post = [];
-        foreach ($repository as $data) {
-            $post = $blogContentResource->toArray($data);
+        $unknown = null;
+        if(count($repository) > 0){
+            foreach ($repository as $data) {
+                $post = $blogContentResource->toArray($data);
+            }
+        }else{
+            $unknown = $id;
         }
 
         return view('blog.post')
-            ->with(['post' => $post]);
+            ->with(['post' => $post, 'unknown' => $unknown]);
     }
 
     /**

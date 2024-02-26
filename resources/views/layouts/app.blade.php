@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="title" content="{{ Seo::get('title') }}" />
+        <meta name="description" content="{{ Seo::get('description') }}" />
+        <meta name="keywords" content="{{ Seo::get('keywords') }}" />
+
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -15,6 +19,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
+    @include('laravel-seo::sd-organization')
+    @include('laravel-seo::sd-local-business')
+    @include('laravel-seo::sd-website')
+    @include('laravel-seo::sd-breadcrumblist')
     <div id="app" class="min-h-screen">
         @include('layouts.navigation')
         <div class="w-full">{{ $slot }}</div>

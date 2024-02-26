@@ -31,7 +31,7 @@ class SettingsController extends Controller
                 'emails' => $emails ,
             ]);
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
 
     }

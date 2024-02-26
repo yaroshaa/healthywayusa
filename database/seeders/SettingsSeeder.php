@@ -19,7 +19,19 @@ class SettingsSeeder extends Seeder
 
         Settings::create([
             'id' => '1',
-            'admin_email' => 'sportmedix@gmail.com'
+            'admin_email' => 'yaroshaa@gmail.com',
+            'facebook_link' => '',
+            'twitter_link' => '',
+            'instagtam_link' => '',
+            'telegram_link' => '',
+            'whatsapp_link' => '',
+            'slack_link' => '',
+            'phone_1' => '',
+            'phone_2' => '',
+            'phone_3' => '',
+            'phone_4' => '',
+            'address' => '',
+            'postal_code' => '',
         ]);
     }
 }

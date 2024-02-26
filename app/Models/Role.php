@@ -23,9 +23,9 @@ class Role extends Model
         'key'
     ];
 
-    protected $with = [
-        'users',
-    ];
+//    protected $with = [
+//        'users',
+//    ];
     public function users(): HasMany
     {
         return $this->hasMany(User::class);
