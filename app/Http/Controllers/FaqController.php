@@ -58,7 +58,8 @@ class FaqController extends Controller
     {
         $request->validate([
             'userId' => ['required'],
-            'question' => ['required'],
+            'question' => ['required','string'],
+            //            'g-recaptcha-response' => 'required|captcha',
         ]);
 
         $newQuestion = $this->faqRepository->storeQuestion($request);

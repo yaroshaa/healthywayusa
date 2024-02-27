@@ -1,17 +1,16 @@
 <x-app-layout>
-
         <x-top-block>
             <x-slogan>
                 {{ __('Added information') }}...
             </x-slogan>
             <x-h1>{{ __('Frequently Asked Questions') }}</x-h1>
         </x-top-block>
-        <div class="max-w-7xl mx-auto xl:mb-40 lg:mb-40 md:mb-8 sm:mb-3 lt:mb-3">
+        <div class="max-w-7xl mx-auto xl:mb-40 lg:mb-40 md:mb-8 sm:mb-3 lt:mb-3 p-4">
             <div class="w-4/5 ">
-                <div class="p-2 xl:text-gray-600 lg:text-gray-600 md:text-gray-600 sm:text-gray-600 lt:text-gray-600 lg:my-16 sm:my-2 xl:w-3/4 lg:w-3/4 md:w-full sm:w-full lt:w-full sm:text-xs md:text-2xl">
+                <div class="xl:text-gray-600 lg:text-gray-600 md:text-gray-600 sm:text-gray-600 lt:text-gray-600 my-8 xl:w-3/4 lg:w-3/4 md:w-full sm:w-full lt:w-full sm:text-xs md:text-2xl">
                     @if(Auth::user())
                         <div x-data="{ expanded: false }">
-                            <button class="" @click="expanded = ! expanded">
+                            <button class="hover:text-cyan-800" @click="expanded = ! expanded">
                                 {{ __('Add Question') }}
                             </button>
                             <div x-show="expanded" x-collapse>
@@ -38,32 +37,34 @@
                             </div>
                             @else
                                 <div>Register or login to add your question</div>
-
                             @endif
                         </div>
                 </div>
-
         </div>
-        <div class="max-w-7xl mx-auto pt-2 xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3 mt-5">
-
+        <div class="max-w-7xl mx-auto xl:mb-10 lg:mb-10 md:mb-8 sm:mb-3 lt:mb-3">
+            <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full my-5 ">
+                <h3 class="xl:text-xl lg:text-xl md:text-xl sm:text-xl lt:text-xl font-medium xl:text-left lg:text-left md:text-center sm:text-center lt:text-center text-dark-green">
+                    {{ __('Сlick on a question to see the answer.') }}
+                </h3>
+            </div>
             @if(count($data['data']) > 0 )
                 @php($counter = 1)
                 @foreach($data['data'] as $faq)
                     @php($counter++)
-                    <div class="flex justify-start pt-5 xl:flex-row lg:flex-row md:flex-row ssm:flex-col lt:flex-col mb-3">
-                        @if($faq['answered'] && !Auth::user() && $faq['status'])
-                            <div x-data="{ expanded: false }" class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
+                    <div class="flex justify-start xl:flex-row lg:flex-row md:flex-row ssm:flex-col lt:flex-col mb-3">
+                        @if($faq['answered'] && $faq['status'])
+                            <div x-data="{ expanded: false }" class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full">
                                 <div @click="expanded = ! expanded"  class="text-justify xl:pr-10 lg:pr-10 md:pr-0 sm:pr-0 lt:pr-0">
-                                    <p class="p-3">{{ $faq['question'] }}</p>
+                                    <p class="py-3">{{ $faq['question'] }}</p>
                                 </div>
                                 <div x-show="expanded" x-collapse class="text-justify xl:pr-10 lg:pr-10 md:pr-0 sm:pr-0 lt:pr-0 bg-slate-100">
-                                    <p class="p-3" >{{ $faq['answer'] }}</p>
+                                    <p class="py-3" >{{ $faq['answer'] }}</p>
                                 </div>
                             </div>
                         @elseif(Auth::user() && Auth::user()->isAdmin())
-                            <div x-data="{ expanded: false }" class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full p-4">
+                            <div x-data="{ expanded: false }" class="xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-full lt:w-full">
                                 <div @click="expanded = ! expanded"  class="text-justify xl:pr-10 lg:pr-10 md:pr-0 sm:pr-0 lt:pr-0">
-                                    <p class="p-3">{{ $faq['question'] }}</p>
+                                    <p class="py-3">{{ $faq['question'] }}</p>
                                 </div>
                                 <div x-show="expanded" x-collapse class="text-justify xl:pr-10 lg:pr-10 md:pr-0 sm:pr-0 lt:pr-0">
                                     <div x-show="expanded" x-collapse>

@@ -16,7 +16,6 @@ use App\Jobs\SendMailJob;
 
 class ContactController extends Controller
 {
-
     private const ID = 1;
     /**
      * Display a listing of the resource.
@@ -25,8 +24,18 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('pages.contact')->with([
-            'name' => 'Contacts',
+        return view('pages.contact');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Response
+     */
+    public function result()
+    {
+        return view('pages.send-result')->with([
+            'result' => session('sendResult')
         ]);
     }
 
@@ -39,22 +48,22 @@ class ContactController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
+            'company' => ['required',  'string', 'max:255'],
             'email' => ['required',  'email', 'max:255'],
+            'phone' => ['required',  'string', 'max:255'],
             'message' => ['required', 'string'],
-            'g-recaptcha-response' => 'required|captcha',
-        ]);
-
-        $mail = Email::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'message' => strip_tags($request->input('message')),
+//            'g-recaptcha-response' => 'required|captcha',
         ]);
 
         $data = [
             'name' => $request->input('name'),
+            'company' => $request->input('company'),
             'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
             'message' => strip_tags($request->input('message'))
         ];
+
+        $mail = Email::create($data);
 
         if ($mail->id != null) {
             $adminEmails = explode(',', Settings::find($this::ID)->admin_email);
@@ -64,12 +73,12 @@ class ContactController extends Controller
                     SendMailJob::dispatch($data, trim($item));
                 }
             }
-
-            return view('pages.send-result')->with(['data' => 'Your message has been sent']);
-
+            session(['sendResult' => true]);
         }else {
-            return view('pages.send-result')->with(['data' => 'Message not sent']);
+            session(['sendResult' => false]);
         }
+
+        return redirect()->route('sendResult');
     }
 
     /**
@@ -80,11 +89,11 @@ class ContactController extends Controller
      */
     public function delete(int $id)
     {
-        if(Auth::user() && Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->isAdmin()) {
             Email::find($id)->delete();
             return redirect()->back();
         }else{
-            return redirect()->route('/');
+            return redirect()->route('home');
         }
     }
 }

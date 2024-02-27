@@ -20,6 +20,8 @@ class NewQuestionFaq extends Mailable
         $this->data['name'] = $name;
         $this->data['email'] = $userEmail;
         $this->data['question'] = $question;
+        $this->data['answer_link'] = url('faq');
+
     }
 
     /**
@@ -29,7 +31,7 @@ class NewQuestionFaq extends Mailable
      */
     public function build(): static
     {
-        return $this->subject('New message from contact page purovite.com')
+        return $this->subject('New Question on the site healthywayproduction.com')
             ->markdown('mails.newQuestionOnFaq', [
                 'data' => $this->data
             ]);

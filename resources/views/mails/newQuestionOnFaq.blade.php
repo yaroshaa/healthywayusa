@@ -5,5 +5,7 @@
     <tr><td>Email: </td><td>{{ $data['email'] }}</td></tr>
     <tr><td>Message: </td><td>{{ $data['question'] }}</td></tr>
     </tbody>
-</table>
+</table><br>
+<div style="display: block; text-align: left; padding-left:2px;"><a href="{{$data['answer_link']}}">Answer</a></div>
+
 @endcomponent

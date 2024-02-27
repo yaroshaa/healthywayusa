@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('admin_email')->nullable();
             $table->string('facebook_link')->nullable();
             $table->string('twitter_link')->nullable();
-            $table->string('instagtam_link')->nullable();
+            $table->string('instagram_link')->nullable();
             $table->string('telegram_link')->nullable();
             $table->string('whatsapp_link')->nullable();
             $table->string('slack_link')->nullable();

@@ -40,6 +40,7 @@ Route::get('/services', [PageController::class, 'index'])->name('services');
 // Contacts
 Route::get('/contacts', [ContactController::class, 'index'])->name('contacts');
 Route::post('/contacts', [ContactController::class, 'send'])->name('contactsSend');
+Route::get('/contacts/result', [ContactController::class, 'result'])->name('sendResult');
 
 // Search
 Route::post('/search', [SearchController::class, 'index'])->name('search');

@@ -17,10 +17,12 @@ class NewMessageFromContactPage extends Mailable
      * Create a new message instance.
      *
      */
-    public function __construct($name, $userEmail,$userMessage)
+    public function __construct($userName, $userCompany, $userEmail, $userPhone, $userMessage )
     {
-        $this->data['name'] = $name;
+        $this->data['name'] = $userName;
+        $this->data['company'] = $userCompany;
         $this->data['email'] = $userEmail;
+        $this->data['phone'] = $userPhone;
         $this->data['message'] = $userMessage;
     }
 
@@ -31,7 +33,7 @@ class NewMessageFromContactPage extends Mailable
      */
     public function build()
     {
-        return $this->subject('New message from contact page purovite.com')
+        return $this->subject('New message from contact page healthywayproduction.com')
             ->markdown('mails.messageFromContactPage', [
                 'data' => $this->data
             ]);

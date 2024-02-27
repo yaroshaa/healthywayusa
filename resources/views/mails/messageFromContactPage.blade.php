@@ -2,7 +2,9 @@
 <table cellspacing="0" cellpadding="4">
     <tbody>
     <tr><td>Name: </td><td>{{ $data['name'] }}</td></tr>
+    <tr><td>Company: </td><td>{{ $data['company'] }}</td></tr>
     <tr><td>Email: </td><td>{{ $data['email'] }}</td></tr>
+    <tr><td>Phone: </td><td>{{ $data['phone'] }}</td></tr>
     <tr><td>Message: </td><td>{{ $data['message'] }}</td></tr>
     </tbody>
 </table>

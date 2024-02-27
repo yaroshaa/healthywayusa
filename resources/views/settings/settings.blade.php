@@ -13,24 +13,24 @@
                     <div class="tab-wrapper pb-10" x-data="{ activeTab:  0 }">
                         <div class="flex">
                             <label
-                                @click="activeTab = 0"
-                                class="tab-control p-3 pl-0 pr-5 cursor-pointer"
-                                :class="{ 'active': activeTab === 0 }"
+                                    @click="activeTab = 0"
+                                    class="tab-control p-3 pl-0 pr-5 cursor-pointer"
+                                    :class="{ 'active': activeTab === 0 }"
                             >Settings</label>
                             <label
-                                @click="activeTab = 1"
-                                class="tab-control p-3 pl-0 pr-5 cursor-pointer"
-                                :class="{ 'active': activeTab === 1 }"
+                                    @click="activeTab = 1"
+                                    class="tab-control p-3 pl-0 pr-5 cursor-pointer"
+                                    :class="{ 'active': activeTab === 1 }"
                             >Users</label>
                             <label
-                                @click="activeTab = 2"
-                                class="tab-control p-3 pl-0 cursor-pointer"
-                                :class="{ 'active': activeTab === 2 }"
+                                    @click="activeTab = 2"
+                                    class="tab-control p-3 pl-0 cursor-pointer"
+                                    :class="{ 'active': activeTab === 2 }"
                             >Messages</label>
                             <label
-                                @click="activeTab = 3"
-                                class="tab-control p-3 pl-0 cursor-pointer"
-                                :class="{ 'active': activeTab === 3 }"
+                                    @click="activeTab = 3"
+                                    class="tab-control p-3 pl-0 cursor-pointer"
+                                    :class="{ 'active': activeTab === 3 }"
                             >Social</label>
                         </div>
 
@@ -43,9 +43,104 @@
 
                                     <div class="mt-4">
                                         <x-input-label for="admin_email" :value="__('Admin Email')"/>
-                                        <x-text-area id="admin_email" class="mt-1 w-full" type="text" name="admin_email"
-                                                     required>{{ $settings->admin_email }}</x-text-area>
+                                        <x-text-input id="admin_email" class="mt-1 w-full" type="text"
+                                                      name="admin_email"
+                                                      :value="$settings->admin_email"
+                                                      required/>
                                         <x-input-error :messages="$errors->get('admin_email')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="phone_1" :value="__('Phone #1')"/>
+                                        <x-text-input id="phone_1" class="mt-1 w-full" type="text" name="phone_1"
+                                                      :value="$settings->phone_1"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('phone_1')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="phone_2" :value="__('Phone #2')"/>
+                                        <x-text-input id="phone_2" class="mt-1 w-full" type="text" name="phone_2"
+                                                       :value="$settings->phone_2"
+                                                       required/>
+                                        <x-input-error :messages="$errors->get('phone_2')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="phone_3" :value="__('Phone #3')"/>
+                                        <x-text-input id="phone_3" class="mt-1 w-full" type="text" name="phone_3"
+                                                      :value="$settings->phone_3"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('phone_3')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="phone_4" :value="__('Phone #4')"/>
+                                        <x-text-input id="phone_4" class="mt-1 w-full" type="text" name="phone_4"
+                                                      :value="$settings->phone_4"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('phone_4')" class="mt-2"/>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <x-input-label for="facebook_link" :value="__('Facebook')"/>
+                                        <x-text-input id="facebook_link" class="mt-1 w-full" type="text"
+                                                      name="facebook_link"
+                                                      :value="$settings->facebook_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('facebook_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="twitter_link" :value="__('Twitter')"/>
+                                        <x-text-input id="twitter_link" class="mt-1 w-full" type="text"
+                                                      name="twitter_link"
+                                                      :value="$settings->twitter_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('twitter_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="instagram_link" :value="__('Instagram')"/>
+                                        <x-text-input id="instagram_link" class="mt-1 w-full" type="text"
+                                                      name="instagram_link"
+                                                      :value="$settings->instagram_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('instagram_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="telegram_link" :value="__('Telegram')"/>
+                                        <x-text-input id="telegram_link" class="mt-1 w-full" type="text"
+                                                      name="telegram_link"
+                                                      :value="$settings->telegram_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('telegram_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="whatsapp_link" :value="__('Whatsapp')"/>
+                                        <x-text-input id="whatsapp_link" class="mt-1 w-full" type="text"
+                                                      name="whatsapp_link"
+                                                      :value="$settings->whatsapp_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('whatsapp_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="slack_link" :value="__('Slack')"/>
+                                        <x-text-input id="slack_link" class="mt-1 w-full" type="text"
+                                                      name="slack_link"
+                                                      :value="$settings->slack_link"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('slack_link')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="address" :value="__('Address')"/>
+                                        <x-text-input id="address" class="mt-1 w-full" type="text"
+                                                      name="address"
+                                                      :value="$settings->address"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('address')" class="mt-2"/>
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-input-label for="postal_code" :value="__('Postal code')"/>
+                                        <x-text-input id="postal_code" class="mt-1 w-full" type="text"
+                                                      name="postal_code"
+                                                      :value="$settings->postal_code"
+                                                      required/>
+                                        <x-input-error :messages="$errors->get('postal_code')" class="mt-2"/>
                                     </div>
 
                                     <div class="flex items-center justify-start mt-4">
@@ -122,7 +217,7 @@
 
                                                             <div class="mt-6 flex justify-end">
                                                                 <x-secondary-button
-                                                                    x-on:click.prevent="$dispatch('close', 'confirm-user-deletion-{{$counter}}')">
+                                                                        x-on:click.prevent="$dispatch('close', 'confirm-user-deletion-{{$counter}}')">
                                                                     {{ __('Cancel') }}
                                                                 </x-secondary-button>
 
@@ -186,7 +281,7 @@
 
                                                     <div class="mt-6 flex justify-end">
                                                         <x-secondary-button
-                                                            x-on:click.prevent="$dispatch('close', 'confirm-message-deletion-{{$messageCounter}}')">
+                                                                x-on:click.prevent="$dispatch('close', 'confirm-message-deletion-{{$messageCounter}}')">
                                                             {{ __('Cancel') }}
                                                         </x-secondary-button>
 

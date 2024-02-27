@@ -17,8 +17,10 @@ class SendMailJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private string $name;
+    private string $userName;
+    private string $userCompany;
     private string $userEmail;
+    private string $userPhone;
     private string $userMessage;
     private string $adminEmail;
 
@@ -27,8 +29,10 @@ class SendMailJob implements ShouldQueue
      */
     public function __construct($data, $adminEmail)
     {
-        $this->name = $data['name'];
+        $this->userName = $data['name'];
+        $this->userCompany = $data['company'];
         $this->userEmail = $data['email'];
+        $this->userPhone = $data['phone'];
         $this->userMessage = $data['message'];
         $this->adminEmail = $adminEmail;
 
@@ -40,6 +44,6 @@ class SendMailJob implements ShouldQueue
     public function handle(): void
     {
         Mail::to($this->adminEmail)
-            ->send(new NewMessageFromContactPage($this->name, $this->userEmail,$this->userMessage ));
+            ->send(new NewMessageFromContactPage($this->userName, $this->userCompany, $this->userEmail, $this->userPhone, $this->userMessage ));
     }
 }
