@@ -34,7 +34,7 @@
 
         <div class="flex items-center justify-center mt-4">
             <div class="px-5"><a href=""><x-facebool-icon></x-facebool-icon></a></div>
-            <div class="px-5"><a href=""><x-google-icon></x-google-icon></a></div>
+            <div class="px-5"><a href="{{ route('google.redirect') }}"><x-google-icon></x-google-icon></a></div>
             <div class="px-5"><a href=""><x-twitter-icon></x-twitter-icon></a></div>
         </div>
 

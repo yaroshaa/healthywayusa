@@ -22,7 +22,7 @@ class SettingsSeeder extends Seeder
             'admin_email' => 'yaroshaa@gmail.com',
             'facebook_link' => '',
             'twitter_link' => '',
-            'instagtam_link' => '',
+            'instagram_link' => '',
             'telegram_link' => '',
             'whatsapp_link' => '',
             'slack_link' => '',
